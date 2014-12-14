@@ -1,0 +1,210 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ABE032FA-3415-4707-8709-B888E31A3DE5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DBMS.core</RootNamespace>
+    <AssemblyName>DBMS.core</AssemblyName>
+    <SourceAnalysisOverrideSettingsFile>C:\Users\Sam\AppData\Roaming\ICSharpCode/SharpDevelop3.0\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.TextEditor, Version=3.2.1.6466, Culture=neutral, PublicKeyToken=4d61825e8dd49f1a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\ICSharpCode.TextEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SqlParser\QueriesReadDelegate.cs" />
+    <Compile Include="SqlParser\QueriesReadEventArgs.cs" />
+    <Compile Include="SqlParser\SqlParser.cs" />
+    <Compile Include="TableRefreshArgs.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="ConnectionSetting.cs" />
+    <Compile Include="UI\BlobViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\BlobViewForm.Designer.cs">
+      <DependentUpon>BlobViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataUserView\CodeCompletionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DataUserView\CodeCompletionForm.Designer.cs">
+      <DependentUpon>CodeCompletionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataUserView\DataUserView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\DataUserView\DataUserView.Designer.cs">
+      <DependentUpon>DataUserView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataUserView\Delegates.cs" />
+    <Compile Include="UI\DataUserView\CodeCompletionProvider.cs" />
+    <Compile Include="UI\DataUserView\FindAndReplaceWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DataUserView\FindAndReplaceWindow.Designer.cs">
+      <DependentUpon>FindAndReplaceWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DataUserView\KeywordFoundEventArgs.cs" />
+    <Compile Include="UI\DataUserView\QuerySavedEvent.cs" />
+    <Compile Include="Delegates.cs" />
+    <Compile Include="History.cs" />
+    <Compile Include="HistoryElement.cs" />
+    <Compile Include="IConnectionSetting.cs" />
+    <Compile Include="IConnexionBuilder.cs" />
+    <Compile Include="IDBBrowser.cs" />
+    <Compile Include="Krypto.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="QueryExecutedEventArgs.cs" />
+    <Compile Include="QueryResult.cs" />
+    <Compile Include="SamHugeString.cs" />
+    <Compile Include="TableBoundedArg.cs" />
+    <Compile Include="UI\DBBrowserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\SetTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SetTypeForm.Designer.cs">
+      <DependentUpon>SetTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SqlDataGridViewRow.cs" />
+    <Compile Include="UI\TextForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\TextForm.Designer.cs">
+      <DependentUpon>TextForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TypeCalendarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\TypeCalendarForm.Designer.cs">
+      <DependentUpon>TypeCalendarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatedCell.cs" />
+    <Compile Include="UpdateInfo.cs" />
+    <EmbeddedResource Include="UI\BlobViewForm.resx">
+      <DependentUpon>BlobViewForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DBBrowserControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DBBrowserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SetTypeForm.resx">
+      <DependentUpon>SetTypeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TextForm.resx">
+      <DependentUpon>TextForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TypeCalendarForm.resx">
+      <DependentUpon>TypeCalendarForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="ProfilingSessions\Session20141214_011439.sdps" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UI\DataUserView\CodeCompletionForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CodeCompletionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DataUserView\DataUserView.resx">
+      <DependentUpon>DataUserView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DataUserView\FindAndReplaceWindow.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FindAndReplaceWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SqlParser" />
+    <Folder Include="UI" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

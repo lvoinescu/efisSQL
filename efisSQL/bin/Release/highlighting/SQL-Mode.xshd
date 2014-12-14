@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+<SyntaxDefinition name="SQL" extensions=".sql">
+
+	<Environment> 
+		<Default      color="SystemColors.WindowText" bgcolor="SystemColors.Window"/>
+		<Selection color="White" bgcolor="LightBlue"/>
+		<VRuler       color="Transparent"/>
+		<InvalidLines color="Red"/>
+		<CaretMarker  color="Yellow"/>
+		<LineNumbers  color="Teal" bgcolor="SystemColors.Window"/>
+		<FoldLine     color="#808080" bgcolor="Black"/>
+		<FoldMarker   color="#808080" bgcolor="White"/>
+		<EOLMarkers   color="#E0E0E5"/>
+		<SpaceMarkers color="#E0E0E5"/>
+		<TabMarkers   color="#E0E0E5"/>
+	</Environment>
+	
+	<Properties>
+		<Property name="LineComment" value="--"/>
+	</Properties>
+	
+	<Digits name="Digits" bold="false" italic="false" color="DarkBlue"/>
+
+	<RuleSets>
+		<RuleSet ignorecase="true">
+			
+			<Delimiters>=!&gt;&lt;+-/*%&amp;|^~.}{,;][?:()</Delimiters>
+			
+			<Span name="LineComment" bold="false" italic="false" color="DarkGreen" stopateol="true">
+				<Begin>--</Begin>
+			</Span>
+			
+			<Span name="BlockComment" bold="false" italic="false" color="DarkGreen" stopateol="false">
+				<Begin>/*</Begin>
+				<End>*/</End>
+			</Span>
+			
+			<Span name="String" bold="false" italic="false" color="Sienna" stopateol="false">
+				<Begin>&quot;</Begin>
+				<End>&quot;</End>
+			</Span>
+				
+			<Span name="TablesAndDataBases" bold="false" italic="false" color="OrangeRed" stopateol="false">
+				<Begin>`</Begin>
+				<End>`</End>
+			</Span>
+
+			<Span name="Character" bold="false" italic="false" color="Sienna" stopateol="true">
+				<Begin>&apos;</Begin>
+				<End>&apos;</End>
+			</Span>
+			
+			<KeyWords name="SqlKeywords" bold="false" italic="false" color="DarkBlue">
+				<Key word="from" />
+				<Key word="where" />
+				<Key word="in" />
+				<Key word="on" />
+				<Key word="exists" />
+				<Key word="or" />
+				<Key word="and" />
+				<Key word="not" />
+				<Key word="null" />
+				<Key word="having" />
+				<Key word="group" />
+				<Key word="by" />
+				<Key word="order" />
+				<Key word="is" />
+        <Key word="as" />
+				
+				<Key word="into" />
+				<Key word="values" />
+				<Key word="set" />	
+				<Key word="inner" />	
+				<Key word="outer" />	
+				<Key word="join" />	
+				<Key word="union" />
+				<Key word="desc" />
+				<Key word="asc" />
+
+        <Key word="go" />
+        <Key word="commit" />
+        <Key word="trans" />
+        <Key word="rollback" />
+        <Key word="transaction" />
+			</KeyWords>
+			
+			<KeyWords name="SqlActionWords" bold="false" italic="false" color="Blue">
+				<Key word="show" />
+				<Key word="select" />
+				<Key word="update" />
+				<Key word="use" />
+				<Key word="insert" />
+				<Key word="create" />
+				<Key word="drop" />
+				<Key word="delete" />
+				<Key word="truncate" />
+				<Key word="alter" />
+				<Key word="add" />				
+			</KeyWords>
+			
+			<KeyWords name="SqlTypes" bold="true" italic="false" color="BlueViolet">
+				<Key word="varchar" />
+				<Key word="nvarchar" />
+				<Key word="char" />
+				<Key word="nchar" />
+				<Key word="text" />
+				<Key word="tinytext" />
+				<Key word="mediumtext" />
+				<Key word="longtext" />
+				<Key word="mediumblob" />
+				<Key word="longblob" />
+		
+				<Key word="int" />
+				<Key word="tinyint" />
+				<Key word="smallint" />
+				<Key word="mediumint" />
+				<Key word="bigint" />
+				<Key word="double" />
+				<Key word="float" />
+				<Key word="decimal" />
+
+				<Key word="date" />
+				<Key word="datetime" />
+				<Key word="timestamp" />
+				<Key word="time" />
+
+				<Key word="enum" />
+				<Key word="set" />
+			</KeyWords>
+			
+			<KeyWords name="SqlObjects" bold="false" italic="false" color="Blue">
+				<Key word="table" />
+				<Key word="proc" />
+				<Key word="procedure" />
+				<Key word="function" />
+				<Key word="view" />
+				<Key word="trigger" />
+				<Key word="index" />
+				<Key word="database" />							
+				<Key word="status" />	
+			</KeyWords>
+			
+			<KeyWords name="TSql" bold="false" italic="false" color="DarkBlue">
+				<Key word="IF" />
+				<Key word="ELSE" />
+				<Key word="CASE" />
+				<Key word="RETURN" />
+				<Key word="END" />
+				<Key word="DECLARE" />
+				
+				<Key word="BEGIN" />
+				<Key word="CASE" />
+				<Key word="WHEN" />
+				<Key word="END" />
+			</KeyWords>
+			
+			<KeyWords name="Punctuation" bold="false" italic="false" color="DarkSlateGray">
+				<Key word="(" />
+				<Key word=")" />				
+			</KeyWords>
+			
+			<KeyWords name="Operators" bold="false" italic="false" color="DarkSlateGray">
+				<Key word="&lt;" />
+				<Key word="&gt;" />
+				<Key word="=" />				
+			</KeyWords>
+			
+			<KeyWords name="Functions" bold="false" italic="false" color="DarkRed">
+				<Key word="substring" />
+				<Key word="upper" />
+				<Key word="lower" />
+				<Key word="reverse" />
+				<Key word="avg" />
+				<Key word="min" />
+				<Key word="max" />
+				<Key word="replace" />
+				<Key word="ltrim" />
+				<Key word="rtrim" />
+				<Key word="cast" />
+				<Key word="sum" />
+				<Key word="count" />
+				
+			</KeyWords>
+
+			
+			
+			
+			
+				
+		</RuleSet>
+	</RuleSets>
+</SyntaxDefinition>

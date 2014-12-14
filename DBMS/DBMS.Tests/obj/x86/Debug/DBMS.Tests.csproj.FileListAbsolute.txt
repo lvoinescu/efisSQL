@@ -1,0 +1,10 @@
+E:\efisSQL\work\DBMS\DBMS.Tests\bin\Debug\DBMS.Tests.exe
+E:\efisSQL\work\DBMS\DBMS.Tests\bin\Debug\DBMS.Tests.pdb
+E:\efisSQL\work\DBMS\DBMS.Tests\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\efisSQL\work\DBMS\DBMS.Tests\obj\x86\Debug\DBMS.Tests.TEst.resources
+E:\efisSQL\work\DBMS\DBMS.Tests\obj\x86\Debug\DBMS.Tests.csproj.GenerateResource.Cache
+E:\efisSQL\work\DBMS\DBMS.Tests\obj\x86\Debug\DBMS.Tests.exe
+E:\efisSQL\work\DBMS\DBMS.Tests\obj\x86\Debug\DBMS.Tests.pdb
+E:\efisSQL\work\DBMS\DBMS.Tests\bin\Debug\DBMS.core.dll
+E:\efisSQL\work\DBMS\DBMS.Tests\bin\Debug\ICSharpCode.TextEditor.dll
+E:\efisSQL\work\DBMS\DBMS.Tests\bin\Debug\DBMS.core.pdb

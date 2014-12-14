@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<root xmlns:x="urn:1">
+  <DBMS.MySQL>
+    <BackUpDataForm>
+      <button3 text="Stop" />
+      <label2 text="Stare" />
+      <label1 text="Cale fisier" />
+      <button2 text="..." />
+      <button1 text="Exporta" />
+      <label3 text="Baza de date" />
+    </BackUpDataForm>
+    <AlterTableForm>
+      <outPut text="Fisier iesire" />
+      <label2 text="CheckSum" />
+      <label6 text="Parola" />
+      <label4 text="Dimensiunea medie a randului" />
+      <label9 text="Tip raid" />
+      <label5 text="Comentariu" />
+      <label8 text="Format rand" />
+      <label7 text="Delay key write" />
+      <label3 text="Autoincrementare" />
+      <label1 text="Motor" />
+      <button2 text="Reimprospatare" />
+      <button1 text="Alter" />
+      <dg1 type="System.Windows.Forms.DataGridView">
+        <Column1 text="id" />
+        <Column2 text="tip" />
+        <Column3 text="lungime/set" />
+        <Column6 text="implicit" />
+        <collation text="collation" />
+        <Column4 text="cheie primara" />
+        <Column7 text="autoincrementare" />
+        <Column5 text="nenul" />
+        <Column8 text="zero fill" />
+        <unsigned text="fara semn" />
+        <Column9 text="comentariu" />
+      </dg1>
+      <label10 text="Nume tabel" />
+    </AlterTableForm>
+    <ExecuteBatchForm>
+      <dg type="System.Windows.Forms.DataGridView">
+        <Column1 text="No." />
+        <Column2 text="Length (bytes)" />
+        <Column4 text="Show/Preview" />
+      </dg>
+    </ExecuteBatchForm>
+    <ExportData>
+      <button1 text="Export" />
+      <label5 text="File name" />
+      <button2 text="Browse" />
+      <label4 text="Lines terminated by" />
+      <label3 text="Fields escaped by" />
+      <label2 text="Fields eclosed by" />
+      <label1 text="Fields terminated by" />
+    </ExportData>
+    <FlushForm>
+      <button2 text="Close" />
+      <button1 text="Flush" />
+    </FlushForm>
+    <ImportFromCSV2TableForm>
+      <button2 text="Import" />
+      <button1 text="..." />
+      <label5 text="lines" />
+      <label7 text="Terminated by" />
+      <label4 text="Escaped by" />
+      <label3 text="Enclosed by" />
+      <label2 text="Terminated by" />
+      <label1 text="Table" />
+    </ImportFromCSV2TableForm>
+    <IndexForm>
+      <label1 text="Drag and drop columns below in the right listview to modify index" />
+      <button4 text="Delete" />
+      <button1 text="New" />
+      <label2 text="Sort columns by dragging" />
+      <button2 text="Apply" />
+      <button5 text="Remove" />
+    </IndexForm>
+    <MySQLDBBrowser>
+      <triggerMenu type="System.Windows.Forms.ContextMenuStrip">
+        <toolStripMenuItem22 text="Reimprospatare" />
+        <toolStripMenuItem10 text="Trigger nou" />
+        <toolStripMenuItem11 text="Modifica trigger" />
+        <toolStripMenuItem12 text="Sterge trigger" />
+      </triggerMenu>
+      <procedureMenu type="System.Windows.Forms.ContextMenuStrip">
+        <toolStripMenuItem20 text="Reimprospatare" />
+        <toolStripMenuItem7 text="Procedura noua" />
+        <toolStripMenuItem8 text="Modifica procedura" />
+        <toolStripMenuItem9 text="Sterge procedura" />
+      </procedureMenu>
+      <dataBaseMenu type="System.Windows.Forms.ContextMenuStrip">
+        <refreshToolStripMenuItem text="Reimprospatare" />
+        <createToolStripMenuItem text="Creaza tabel" />
+        <alterDatabaseToolStripMenuItem text="Modifica" />
+        <advancedToolStripMenuItem text="Avansat">
+          <dropDatabaseToolStripMenuItem text="Sterge baza de date" />
+          <truncateToolStripMenuItem text="Trunchiaza" />
+          <emptyToolStripMenuItem text="Goleste" />
+        </advancedToolStripMenuItem>
+        <backupToolStripMenuItem text="Backup in format sql" />
+        <importToolStripMenuItem text="Testaurare din format sql" />
+        <createSchemaToolStripMenuItem text="Creaza schema" />
+      </dataBaseMenu>
+      <functionMenu type="System.Windows.Forms.ContextMenuStrip">
+        <toolStripMenuItem24 text="Reimprospatare" />
+        <newFunctionToolStripMenuItem text="Functie noua" />
+        <alterFunctionToolStripMenuItem text="Modifica functia"/>
+        <dropFunctionToolStripMenuItem text="Sterge functia" />
+      </functionMenu>
+      <serverMenu type="System.Windows.Forms.ContextMenuStrip">
+        <refresServerhMenuItem text="Reimprospatare" />
+        <newQueryMenuItem text="Editor nou de interogare" />
+        <newDatabaseMenuItem text="Baza de date noua" />
+        <restoreDatabaseFromSqlDumpMenuItem text="Restaurare din format sql" />
+        <reconnectMenuItem text="Reconectare" />
+        <disconnectMenuItem text="Deconectare" />
+        <tESTToolStripMenuItem text="TEST" />
+        <tEST2ToolStripMenuItem text="TEST2" />
+      </serverMenu>
+      <viewMenu type="System.Windows.Forms.ContextMenuStrip">
+        <toolStripMenuItem17 text="Reimprospatare" />
+        <newViewToolStripMenuItem text="Vedere noua" />
+        <alterViewToolStripMenuItem text="Modifica vederea" />
+        <dropViewToolStripMenuItem text="Sterge vederea" />
+        <swowToolStripMenuItem text="Arata" />
+      </viewMenu>
+      <tableMenu type="System.Windows.Forms.ContextMenuStrip">
+        <refreshTabletoolStripMenuItem text="Reimprospatare" />
+        <alterToolStripMenuItem text="Modifica" />
+        <manageIndexesToolStripMenuItem text="Indecsi" />
+        <viewReletionshipforeignKeysToolStripMenuItem text="Relatii/chei straine" />
+        <advancedToolStripMenuItem1 text="Avansat">
+          <reorderColumnsToolStripMenuItem text="Reordonare coloane" />
+          <propertiesToolStripMenuItem text="Proprietati" />
+          <truncateToolStripMenuItem1 text="Trunchiaza" />
+        </advancedToolStripMenuItem1>
+        <dropTabelToolStripMenuItem text="Stergere" />
+        <emptyToolStripMenuItem1 text="Goleste" />
+        <renameToolStripMenuItem1 text="Redenumeste" />
+        <exportToolStripMenuItem text="Exporta">
+          <asSqldumpToolStripMenuItem text="Ca SQL " />
+          <asCSVFileToolStripMenuItem text="Ca ..." />
+        </exportToolStripMenuItem>
+        <importToolStripMenuItem1 text="Importa din format CSV" />
+        <createTriggerToolStripMenuItem text="Creaza trigger" />
+        <viewDDLDefinitionToolStripMenuItem text="Definitia DDL" />
+        <copyDDLDefinitionToolStripMenuItem text="Copiaza definitia DDL" />
+      </tableMenu>
+      <contextMenuStrip1 type="System.Windows.Forms.ContextMenuStrip">
+        <setTuNULLToolStripMenuItem text="Setare NULL" />
+        <copyToolStripMenuItem text="Copiaza data" />
+      </contextMenuStrip1>
+      <toolsMenu type="System.Windows.Forms.ContextMenuStrip">
+        <serverStatusToolStripMenuItem text="Stare server" />
+        <tableDiangosticToolStripMenuItem text="Diagnostic tabel" />
+        <flushToolStripMenuItem text="Flush" />
+      </toolsMenu>
+    </MySQLDBBrowser>
+  </DBMS.MySQL>
+</root>
