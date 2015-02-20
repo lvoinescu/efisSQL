@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ConfigurationManager xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Connections>
+    <Connection xsi:type="MySqlConnectionSetting" ConnectionName="local">
+      <Id>2</Id>
+      <Host>localhost</Host>
+      <UserName>root</UserName>
+      <Port />
+      <CharSet />
+      <Password>RXYWqfTmwfA=</Password>
+      <Databases />
+    </Connection>
+    <Connection xsi:type="SQLiteConnectionSetting" ConnectionName="test sqlite">
+      <Id>0</Id>
+      <DataSource>C:\Users\Sam\Desktop\asdf.db3</DataSource>
+      <Password>6xwQDCPtuD8=</Password>
+      <UsePre33xFormat>false</UsePre33xFormat>
+      <ReadOnly>false</ReadOnly>
+      <UseUTF16>false</UseUTF16>
+      <IsNew>false</IsNew>
+    </Connection>
+    <Connection xsi:type="SQLiteConnectionSetting" ConnectionName="New SQLite connection">
+      <Id>1</Id>
+      <DataSource>C:\Documents and Settings\Sam\Desktop\asdf.db3</DataSource>
+      <Password>6xwQDCPtuD8=</Password>
+      <UsePre33xFormat>false</UsePre33xFormat>
+      <ReadOnly>false</ReadOnly>
+      <UseUTF16>false</UseUTF16>
+      <IsNew>true</IsNew>
+    </Connection>
+    <Connection xsi:type="MySqlConnectionSetting" ConnectionName="simtech">
+      <Id>3</Id>
+      <Host>simtechserver</Host>
+      <UserName>sam</UserName>
+      <Port />
+      <CharSet />
+      <Password>+GL/4Jststk=</Password>
+      <Databases />
+    </Connection>
+    <Connection xsi:type="SQLiteConnectionSetting" ConnectionName="New SQLite connection">
+      <Id>4</Id>
+      <DataSource>C:\Documents and Settings\Sam\Desktop\dbdemos.db3</DataSource>
+      <Password>+GL/4Jststk=</Password>
+      <UsePre33xFormat>false</UsePre33xFormat>
+      <ReadOnly>false</ReadOnly>
+      <UseUTF16>false</UseUTF16>
+      <IsNew>false</IsNew>
+    </Connection>
+    <Connection xsi:type="SQLiteConnectionSetting" ConnectionName="New SQLite connection">
+      <Id>5</Id>
+      <DataSource>C:\Users\Sam\Desktop\testbackup</DataSource>
+      <Password>6xwQDCPtuD8=</Password>
+      <UsePre33xFormat>false</UsePre33xFormat>
+      <ReadOnly>false</ReadOnly>
+      <UseUTF16>false</UseUTF16>
+      <IsNew>true</IsNew>
+    </Connection>
+  </Connections>
+</ConfigurationManager>

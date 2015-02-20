@@ -1,0 +1,87 @@
+  <SamDB>
+    <MainMDIManagerForm>
+      <mainToolStrip text="toolStrip1" type="System.Windows.Forms.ToolStrip">
+        <connectStripButton text="Conexiune noua" />
+        <disconnectStripButton text="Deconectare" />
+        <refreshStripButton text="Refresh" />
+        <openToolStripButton text="Deschidere" />
+        <saveStripButton text="Salveaza" />
+        <saveAllStripButton text="Salveaza tot" />
+        <cutToolStripButton text="Sterge" />
+        <copyToolStripButton text="Copiaza" />
+        <pasteToolStripButton text="Lipeste" />
+        <printToolStripButton text="&amp;Print" />
+        <undoStripButton text="Undo" />
+        <redoStripButton text="Redo" />
+        <toolStripLabel3 text="       " />
+        <executeAlllStripButton text="Executa toate interogarile" />
+        <executeCurrentStripButton text="Executa interogarea curenta" />
+        <executeSelectionStripButton text="Executa selectia" />
+        <toolStripLabel2 text="       " />
+        <viewStripSplitButton text="Vedere">
+          <showQueryEditorResultToolStripMenuItem text="Arata editorul si resultatele" />
+          <showQueryEditorOnlyToolStripMenuItem text="Arata doar editorul" />
+          <showResultOutputOnlyToolStripMenuItem text="Arata doar rezultatul" />
+          <showObjectBrowserToolStripMenuItem text="Arata browserul de obiecte" />
+        </viewStripSplitButton>
+        <backupStripButton text="Exporta baza de date" />
+        <exportStripButton text="Importa tabel" />
+        <importStripButton text="Exporta tabel" />
+        <restoreStripButton text="Executa fisier batch" />
+      </mainToolStrip>
+      <mainMenuStrip text="menuStrip1" type="System.Windows.Forms.MenuStrip">
+        <fileToolStripMenuItem text="File">
+          <newConnectionStripMenuItem text="Conexiune noua" />
+          <toolStripMenuItem1 text="Nou">
+            <queryToolStripMenuItem text="Editor de interogari" />
+          </toolStripMenuItem1>
+          <openToolStripMenuItem text="Deschide" />
+          <saveToolStripMenuItem text="Salveaza" />
+          <saveAsMenuItem text="Salveaza ca" />
+          <saveAllMenuItem text="Salveaza tot" />
+          <disconnectToolStripMenuItem text="Deconectare" />
+          <exitToolStripMenuItem text="Exit" />
+        </fileToolStripMenuItem>
+        <editToolStripMenuItem text="Editare">
+          <refreshToolStripMenuItem text="Refresh" />
+          <queryToolStripMenuItem1 text="Interogare" />
+          <undoToolStripMenuItem text="Undo" />
+          <redoToolStripMenuItem text="Redo" />
+          <cutToolStripMenuItem text="Cut" />
+          <copyToolStripMenuItem text="Copy" />
+          <pasteToolStripMenuItem text="Paste" />
+        </editToolStripMenuItem>
+        <dataToolStripMenuItem text="Baza de date" />
+        <tableToolStripMenuItem text="Tabel" />
+        <toolsToolStripMenuItem text="Unelte" />
+        <execToolStripMenuItem text="Exec">
+          <executeAllToolStripMenuItem text="Executa tot" />
+          <executeCurrentOnlyToolStripMenuItem text="Executa interogarea curenta" />
+          <executeSelectionOnlyToolStripMenuItem text="Executa doar selectia" />
+        </execToolStripMenuItem>
+        <windowsToolStripMenuItem text="Ferestre">
+          <tileHorizontalToolStripMenuItem text="Tile orizontal" />
+          <tileVerticalToolStripMenuItem text="Tile vertical" />
+          <cascadeToolStripMenuItem text="Cascada" />
+        </windowsToolStripMenuItem>
+        <helpToolStripMenuItem text="Ajutor">
+          <aboutToolStripMenuItem text="Despre" />
+        </helpToolStripMenuItem>
+      </mainMenuStrip>
+    </MainMDIManagerForm>
+    <DBManagerForm />
+    <SelectDBEngineForm>
+      <dmbsTabControl type="System.Windows.Forms.TabControl">
+        <mysqlPage text="MySQL" />
+        <sqliteTab text="SQLite" />
+      </dmbsTabControl>
+      <button5 text="Test" />
+      <radioButton2 text="Fereastra noua" />
+      <radioButton1 text="Integreaza in fereastra existenta" />
+      <button1 text="Conectare" />
+      <button4 text="Salveaza" />
+      <button3 text="Sterge" />
+      <button2 text="Nou" />
+      <label1 text="Conexiune" />
+    </SelectDBEngineForm>
+  </SamDB>

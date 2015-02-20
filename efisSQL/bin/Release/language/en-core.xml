@@ -1,0 +1,91 @@
+  <DBMS.core>
+    <DataUserView>
+      <historyMenuStrip type="System.Windows.Forms.ContextMenuStrip">
+        <executeToolStripMenuItem text="Execute query" />
+        <executeSelectionHistoryStripMenuItem text="Execute selection" />
+        <saveHistoryToolStripMenuItem text="Save history" />
+        <copyToolStripMenuItem text="Copy" />
+        <clearHistoryToolStripMenuItem text="Clear history" />
+      </historyMenuStrip>
+      <queryMenuStrip type="System.Windows.Forms.ContextMenuStrip">
+        <ExecuteAllQueryMenuItem text="Execute all queries" />
+        <ExecuteCurrentQuerryMenuItem text="Execute current query" />
+        <executeSelectionToolStripMenuItem text="Execute selection" />
+        <toolStripMenuItem6 text="Insert template" />
+        <CopyMenuItem text="Copy" />
+        <CutMenuItem text="Cut" />
+        <PasteMenuItem text="Paste" />
+        <clearToolStripMenuItem text="Clear" />
+        <findToolStripMenuItem text="Find" />
+        <replaceToolStripMenuItem text="Replace" />
+        <commentToolStripMenuItem text="Comment" />
+        <uncommentToolStripMenuItem text="Uncomment" />
+      </queryMenuStrip>
+      <toolStrip3 text="toolStrip3" type="System.Windows.Forms.ToolStrip">
+        <tableStatus text="..." />
+      </toolStrip3>
+      <tableToolStrip text="toolStrip1" type="System.Windows.Forms.ToolStrip">
+        <exportStripButton text="Export" />
+        <addRowStripButton text="Add row" />
+        <saveStripButton text="Save" />
+        <deleteRowsStripButton text="Delete" />
+        <cancelChangesStripButton text="Refresh" />
+        <autosizeColumnLabel text="Autosize columns" />
+        <comboBoxColumns type="System.Windows.Forms.ToolStripComboBox">
+          <i0 text="AllCells" />
+          <i1 text="AllCellsExceptHeader" />
+          <i2 text="ColumnHeader" />
+          <i3 text="DisplayedCells" />
+          <i4 text="DisplayedCellsExceptHeader" />
+          <i5 text="Fill" />
+          <i6 text="None" />
+        </comboBoxColumns>
+        <comboBoxRows type="System.Windows.Forms.ToolStripComboBox">
+          <i0 text="All rows" />
+          <i1 text="Limited view" />
+        </comboBoxRows>
+        <firstLabel text="First" />
+        <rowsLabel text="Rows" />
+      </tableToolStrip>
+      <resultToolStrip text="toolStrip2" type="System.Windows.Forms.ToolStrip">
+        <exportResultTable text="Export" />
+        <refreshResultTable text="Refresh" />
+        <resultAutoSizeColumnLabel text="Autosize columns" />
+        <autoSizeColumnsResult type="System.Windows.Forms.ToolStripComboBox">
+          <i0 text="AllCells" />
+          <i1 text="AllCellsExceptHeader" />
+          <i2 text="ColumnHeader" />
+          <i3 text="DisplayedCells" />
+          <i4 text="DisplayedCellsExceptHeader" />
+          <i5 text="Fill" />
+          <i6 text="None" />
+        </autoSizeColumnsResult>
+      </resultToolStrip>
+      <tabControl type="System.Windows.Forms.TabControl">
+        <tablePage text="Table" />
+        <resultPage text="Result" />
+        <historyPage text="History" />
+      </tabControl>
+    </DataUserView>
+  <BlobViewForm>
+      <radioButton3 text="Hex view" />
+      <checkBox1 text="Stretch" />
+      <comboBox1 type="System.Windows.Forms.ComboBox">
+        <i0 text="ASCII" />
+        <i1 text="UTF7" />
+        <i2 text="UTF8" />
+        <i3 text="DEFAULT" />
+        <i4 text="UTF32" />
+        <i5 text="UNICODE" />
+      </comboBox1>
+      <label1 text="Encoding" />
+      <button5 text="Save" />
+      <button4 text="NULL" />
+      <button1 text="Load" />
+      <radioButton0 text="File" />
+      <radioButton1 text="Text" />
+      <radioButton2 text="Image" />
+      <button3 text="Cancel" />
+      <button2 text="OK" />
+    </BlobViewForm>
+  </DBMS.core>

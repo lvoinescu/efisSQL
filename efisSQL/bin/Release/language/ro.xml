@@ -1,0 +1,551 @@
+<root>
+   <SamDB>
+    <MainMDIManagerForm>
+      <mainToolStrip text="toolStrip1" type="System.Windows.Forms.ToolStrip">
+        <connectStripButton text="Conexiune noua" />
+        <disconnectStripButton text="Deconectare" />
+        <refreshStripButton text="Refresh" />
+        <openToolStripButton text="Deschidere" />
+        <saveStripButton text="Salveaza" />
+        <saveAllStripButton text="Salveaza tot" />
+        <cutToolStripButton text="Sterge" />
+        <copyToolStripButton text="Copiaza" />
+        <pasteToolStripButton text="Lipeste" />
+        <printToolStripButton text="&amp;Print" />
+        <undoStripButton text="Undo" />
+        <redoStripButton text="Redo" />
+        <toolStripLabel3 text="       " />
+        <executeAlllStripButton text="Executa toate interogarile" />
+        <executeCurrentStripButton text="Executa interogarea curenta" />
+        <executeSelectionStripButton text="Executa selectia" />
+        <toolStripLabel2 text="       " />
+        <viewStripSplitButton text="Vedere">
+          <showQueryEditorResultToolStripMenuItem text="Arata editorul si resultatele" />
+          <showQueryEditorOnlyToolStripMenuItem text="Arata doar editorul" />
+          <showResultOutputOnlyToolStripMenuItem text="Arata doar rezultatul" />
+          <showObjectBrowserToolStripMenuItem text="Arata browserul de obiecte" />
+        </viewStripSplitButton>
+        <backupStripButton text="Exporta baza de date" />
+        <exportStripButton text="Importa tabel" />
+        <importStripButton text="Exporta tabel" />
+        <restoreStripButton text="Executa fisier batch" />
+      </mainToolStrip>
+      <mainMenuStrip text="menuStrip1" type="System.Windows.Forms.MenuStrip">
+        <fileToolStripMenuItem text="File">
+          <newConnectionStripMenuItem text="Conexiune noua" />
+          <toolStripMenuItem1 text="Nou">
+            <queryToolStripMenuItem text="Editor de interogari" />
+          </toolStripMenuItem1>
+          <openToolStripMenuItem text="Deschide" />
+          <saveToolStripMenuItem text="Salveaza" />
+          <saveAsMenuItem text="Salveaza ca" />
+          <saveAllMenuItem text="Salveaza tot" />
+          <disconnectToolStripMenuItem text="Deconectare" />
+          <exitToolStripMenuItem text="Exit" />
+        </fileToolStripMenuItem>
+        <editToolStripMenuItem text="Editare">
+          <refreshToolStripMenuItem text="Refresh" />
+          <queryToolStripMenuItem1 text="Interogare" />
+          <undoToolStripMenuItem text="Undo" />
+          <redoToolStripMenuItem text="Redo" />
+          <cutToolStripMenuItem text="Cut" />
+          <copyToolStripMenuItem text="Copy" />
+          <pasteToolStripMenuItem text="Paste" />
+        </editToolStripMenuItem>
+        <dataToolStripMenuItem text="Baza de date" />
+        <tableToolStripMenuItem text="Tabel" />
+        <toolsToolStripMenuItem text="Unelte" />
+        <execToolStripMenuItem text="Exec">
+          <executeAllToolStripMenuItem text="Executa tot" />
+          <executeCurrentOnlyToolStripMenuItem text="Executa interogarea curenta" />
+          <executeSelectionOnlyToolStripMenuItem text="Executa doar selectia" />
+        </execToolStripMenuItem>
+        <windowsToolStripMenuItem text="Ferestre">
+          <tileHorizontalToolStripMenuItem text="Tile orizontal" />
+          <tileVerticalToolStripMenuItem text="Tile vertical" />
+          <cascadeToolStripMenuItem text="Cascada" />
+        </windowsToolStripMenuItem>
+        <helpToolStripMenuItem text="Ajutor">
+          <aboutToolStripMenuItem text="Despre" />
+        </helpToolStripMenuItem>
+      </mainMenuStrip>
+    </MainMDIManagerForm>
+    <DBManagerForm />
+    <SelectDBEngineForm>
+      <dmbsTabControl type="System.Windows.Forms.TabControl">
+        <mysqlPage text="MySQL" />
+        <sqliteTab text="SQLite" />
+      </dmbsTabControl>
+      <button5 text="Test" />
+      <radioButton2 text="Fereastra noua" />
+      <radioButton1 text="Integreaza in fereastra existenta" />
+      <button1 text="Conectare" />
+      <button4 text="Salveaza" />
+      <button3 text="Sterge" />
+      <button2 text="Nou" />
+      <label1 text="Conexiune" />
+    </SelectDBEngineForm>
+  </SamDB>
+  <DBMS.core>
+    <DataUserView>
+      <historyMenuStrip type="System.Windows.Forms.ContextMenuStrip">
+        <executeToolStripMenuItem text="Executa interogarea" />
+        <executeSelectionHistoryStripMenuItem text="Executa selectia" />
+        <saveHistoryToolStripMenuItem text="Salveaza istoricul" />
+        <copyToolStripMenuItem text="Copiaza" />
+        <clearHistoryToolStripMenuItem text="Sterge istoricul" />
+      </historyMenuStrip>
+      <queryMenuStrip type="System.Windows.Forms.ContextMenuStrip">
+        <ExecuteAllQueryMenuItem text="Executa toate interogarile" />
+        <ExecuteCurrentQuerryMenuItem text="Executa interogarea curenta" />
+        <executeSelectionToolStripMenuItem text="Executa selectia" />
+        <toolStripMenuItem6 text="Insereaza template" />
+        <CopyMenuItem text="Copiaza" />
+        <CutMenuItem text="Taie" />
+        <PasteMenuItem text="Lipeste" />
+        <clearToolStripMenuItem text="Sterge" />
+        <findToolStripMenuItem text="Cauta" />
+        <replaceToolStripMenuItem text="Inlocuieste" />
+        <commentToolStripMenuItem text="Comenteaza" />
+        <uncommentToolStripMenuItem text="Decomenteaza" />
+      </queryMenuStrip>
+      <toolStrip3 text="toolStrip3" type="System.Windows.Forms.ToolStrip">
+        <tableStatus text="..." />
+      </toolStrip3>
+      <tableToolStrip text="toolStrip1" type="System.Windows.Forms.ToolStrip">
+        <exportStripButton text="Exporta" />
+        <addRowStripButton text="Adauga inregistrare" />
+        <saveStripButton text="Salveaza" />
+        <deleteRowsStripButton text="Sterge" />
+        <cancelChangesStripButton text="Refresh" />
+        <autosizeColumnLabel text="Auto-dimensionare coloane" />
+        <comboBoxColumns type="System.Windows.Forms.ToolStripComboBox">
+          <i0 text="Toate celulele" />
+          <i1 text="Toate celulele - exceptie header" />
+          <i2 text="Header celule" />
+          <i3 text="Celule afisate" />
+          <i4 text="Celule afisate - exceptie header" />
+          <i5 text="Umple" />
+          <i6 text="Nici unua" />
+        </comboBoxColumns>
+        <comboBoxRows type="System.Windows.Forms.ToolStripComboBox">
+          <i0 text="Toate randurile" />
+          <i1 text="Afisare limitata" />
+        </comboBoxRows>
+        <firstLabel text="Primul rand" />
+        <rowsLabel text="Randuri" />
+      </tableToolStrip>
+      <resultToolStrip text="toolStrip2" type="System.Windows.Forms.ToolStrip">
+        <exportResultTable text="Exporta" />
+        <refreshResultTable text="Refresh" />
+        <resultAutoSizeColumnLabel text="Autosize columns" />
+        <autoSizeColumnsResult type="System.Windows.Forms.ToolStripComboBox">
+          <i0 text="Toate celulele" />
+          <i1 text="Toate celulele - exceptie header" />
+          <i2 text="Header celule" />
+          <i3 text="Celule afisate" />
+          <i4 text="Celule afisate - exceptie header" />
+          <i5 text="Umple" />
+          <i6 text="Nici unua" />
+        </autoSizeColumnsResult>
+      </resultToolStrip>
+      <tabControl type="System.Windows.Forms.TabControl">
+        <tablePage text="Tabel" />
+        <resultPage text="Rezultat" />
+        <historyPage text="Istoric" />
+      </tabControl>
+    </DataUserView>
+  <BlobViewForm>
+      <radioButton3 text="Afisare in hexa" />
+      <checkBox1 text="Alungit" />
+      <comboBox1 type="System.Windows.Forms.ComboBox">
+        <i0 text="ASCII" />
+        <i1 text="UTF7" />
+        <i2 text="UTF8" />
+        <i3 text="DEFAULT" />
+        <i4 text="UTF32" />
+        <i5 text="UNICODE" />
+      </comboBox1>
+      <label1 text="Codificare" />
+      <button5 text="Salvare" />
+      <button4 text="NULL" />
+      <button1 text="Incarca" />
+      <radioButton0 text="Fisier" />
+      <radioButton1 text="Text" />
+      <radioButton2 text="Imagine" />
+      <button3 text="Anuleaza" />
+      <button2 text="OK" />
+    </BlobViewForm>
+  </DBMS.core>
+  <DBMS.MySQL>
+    <AlterTableForm>
+      <outPut text="Output" />
+      <checksum type="System.Windows.Forms.ComboBox">
+        <i0 text="0" />
+        <i1 text="1" />
+        <i2 text="DEFAULT" />
+      </checksum>
+      <label2 text="CheckSum" />
+      <raidType type="System.Windows.Forms.ComboBox">
+        <i0 text="1" />
+        <i1 text="DEFAULT" />
+        <i2 text="RAID0" />
+        <i3 text="STRIPED" />
+      </raidType>
+      <rowFormat type="System.Windows.Forms.ComboBox">
+        <i0 text="COMPACT" />
+        <i1 text="DYNAMIC" />
+        <i2 text="DEFAULT" />
+        <i3 text="FIXED" />
+      </rowFormat>
+      <delaykeywrite type="System.Windows.Forms.ComboBox">
+        <i0 text="0" />
+        <i1 text="1" />
+        <i2 text="DEFAULT" />
+      </delaykeywrite>
+      <engine type="System.Windows.Forms.ComboBox">
+        <i0 text="InnoDB" />
+        <i1 text="MyISAM" />
+        <i2 text="Archive" />
+      </engine>
+      <label6 text="Parola" />
+      <label4 text="Lungime medie rand" />
+      <label9 text="Tip raid" />
+      <label5 text="Comentariu" />
+      <label8 text="Format rand" />
+      <label7 text="Delay key write" />
+      <label3 text="Autoincrement" />
+      <label1 text="Engine" />
+      <groupBox1 text="Advanced" />
+      <button2 text="Refresh" />
+      <button1 text="Alter" />
+      <dg1 type="System.Windows.Forms.DataGridView">
+        <Column1 text="id" />
+        <Column2 text="type" />
+        <Column3 text="length/set" />
+        <Column6 text="default" />
+        <collation text="collation" />
+        <Column4 text="primary key" />
+        <Column7 text="auto increment" />
+        <Column5 text="not null" />
+        <Column8 text="zero fill" />
+        <unsigned text="unsigned" />
+        <Column9 text="comment" />
+      </dg1>
+      <label10 text="Table name" />
+    </AlterTableForm>
+    <BackUpDataForm>
+      <button3 text="Stop" />
+      <label2 text="Status" />
+      <checkBox15 text="All/None" />
+      <dataBaseComboBox type="System.Windows.Forms.ComboBox" />
+      <label1 text="File name" />
+      <button2 text="..." />
+      <button1 text="Export" />
+      <label3 text="Database" />
+		<tableList type="System.Windows.Forms.ListView">
+			<c0 text="Tabele" />
+		  </tableList>
+		</BackUpDataForm>
+    <ExecuteBatchForm>
+      <dg type="System.Windows.Forms.DataGridView">
+        <Column1 text="No." />
+        <Column2 text="Length (bytes)" />
+        <Column4 text="Show/Preview" />
+      </dg>
+      <toolStrip1 text="toolStrip1" type="System.Windows.Forms.ToolStrip">
+        <toolStripLabel1 text="File path:" />
+        <toolStripButton3 text="  ...  " />
+        <toolStripButton1 text="Run" />
+        <toolStripButton4 text="Stop" />
+        <toolStripButton2 text="Clear" />
+        <mode type="System.Windows.Forms.ToolStripComboBox">
+          <i0 text="Read &amp; execute" />
+          <i1 text="Read only" />
+        </mode>
+      </toolStrip1>
+    </ExecuteBatchForm>
+    <ExportData>
+      <checkBox1 text="Select/deselect all" />
+      <button1 text="Export" />
+      <label5 text="File name" />
+      <button2 text="Browse" />
+      <label4 text="Lines terminated by" />
+      <label3 text="Fields escaped by" />
+      <label2 text="Fields eclosed by" />
+      <label1 text="Fields terminated by" />
+		<listView1 type="System.Windows.Forms.ListView">
+			<c0 text="Campuri" />
+		</listView1>
+    </ExportData>
+    <FlushForm>
+      <checkBox1 text="Logs" />
+      <checkBox2 text="Privilegii" />
+      <checkBox3 text="Tabele" />
+      <checkBox4 text="Hosts" />
+      <checkBox5 text="Status" />
+      <checkBox9 text="Query cache" />
+      <checkBox6 text="User_Resources" />
+      <checkBox8 text="Tables with read lock" />
+      <checkBox7 text="Des_key_file" />
+      <groupBox1 text="" />
+      <checkBox11 text="Toate/Nici una" />
+      <button2 text="Inchide" />
+      <button1 text="Flush" />
+      <checkBox10 text="Use NO_Write_To_binlog" />
+    </FlushForm>
+    <ImportFromCSV2TableForm>
+      <button2 text="Importa" />
+      <button1 text="..." />
+      <checkBox2 text="Ignora" />
+      <label5 text="randuri" />
+      <groupBox5 text="" />
+      <checkBox6 text="Ignora" />
+      <checkBox5 text="Inlocuieste" />
+      <groupBox4 text="" />
+      <checkBox4 text="Concurent" />
+      <checkBox3 text="Prioritate mica" />
+      <groupBox3 text="" />
+      <comboBox7 type="System.Windows.Forms.ComboBox">
+        <i0 text="\r\n" />
+        <i1 text="\n" />
+        <i2 text="\r" />
+      </comboBox7>
+      <label7 text="Terminate de" />
+      <groupBox2 text="Randuri" />
+      <comboBox4 type="System.Windows.Forms.ComboBox">
+        <i0 text="\\" />
+      </comboBox4>
+      <label4 text="'Escaped'" />
+      <label3 text="Inchis de" />
+      <comboBox2 type="System.Windows.Forms.ComboBox">
+        <i0 text="," />
+        <i1 text=";" />
+        <i2 text="," />
+        <i3 text="|" />
+      </comboBox2>
+      <label2 text="Terminate de" />
+      <groupBox1 text="Campuri" />
+      <checkBox1 text="Toate/Nici una" />
+      <label1 text="Table" />
+      <comboBox1 type="System.Windows.Forms.ComboBox" />
+	  <listView1 type="System.Windows.Forms.ListView">
+        <c0 text="Coloane" />
+      </listView1>
+    </ImportFromCSV2TableForm>
+    <IndexForm>
+      <label1 text="Drag&amp;drop in lista de mai jos" />
+      <groupBox2 text="Coloane tabel" />
+      <button4 text="Sterge" />
+      <checkBox2 text="Fulltext" />
+      <button1 text="Nou" />
+      <checkBox1 text="Unic" />
+      <label2 text="Sortati ordinea prin 'dragg'" />
+      <button2 text="Aplica" />
+      <button5 text="Sterge" />
+      <groupBox1 text="Proprietati index" />
+	  <listView2 type="System.Windows.Forms.ListView">
+        <c0 text="Indecsi" />
+      </listView2>
+	  <listView1 type="System.Windows.Forms.ListView">
+        <c0 text="Coloane din index" />
+      </listView1>
+    </IndexForm>
+    <InputNewIndexForm>
+      <checkBox1 text="Este index primar" />
+      <label1 text="Introduceti nume index" />
+      <button2 text="Anuleaza" />
+      <button1 text="OK" />
+    </InputNewIndexForm>
+    <NewDbForm>
+      <button2 text="Anuleaza" />
+      <button1 text="OK" />
+      <label1 text="Nume baza de date" />
+    </NewDbForm>
+    <NewReferenceForm>
+      <button2 text="Inchide" />
+      <button1 text="Creaza" />
+      <checkBox2 text="" />
+      <checkBox1 text="" />
+      <label2 text="Nume constrangere" />
+      <label1 text="Tabel referinta" />
+      <comboBox1 type="System.Windows.Forms.ComboBox" />
+      <radioButton8 text="Restrict" />
+      <radioButton7 text="Set NULL" />
+      <radioButton6 text="No action" />
+      <radioButton5 text="Cascade" />
+      <groupBox2 text="    On delete" />
+      <radioButton4 text="Restrict" />
+      <radioButton3 text="Set NULL" />
+      <radioButton2 text="No action" />
+      <radioButton1 text="Cascade" />
+      <groupBox1 text="     On update" />
+      <dg1 type="System.Windows.Forms.DataGridView">
+        <Column1 text="Coloana" />
+        <Column2 text="Coloana referinta" />
+      </dg1>
+    </NewReferenceForm>
+    <ReferenceTableForm>
+      <button2 text="Adauga" />
+      <button3 text="Inchide" />
+      <button1 text="Sterge" />
+	  <listView1 type="System.Windows.Forms.ListView">
+        <c0 text="Nume referinta" />
+        <c1 text="Coloana" />
+        <c2 text="Tabel referinta" />
+        <c3 text="Coloana referinta" />
+      </listView1>
+    </ReferenceTableForm>
+    <ReorderColumnForm>
+      <button5 text="" />
+      <button4 text="Anuleaza" />
+      <button3 text="OK" />
+      <button2 text="" />
+      <button1 text="" />
+	  <listView1 type="System.Windows.Forms.ListView">
+        <c0 text="Nume coloana" />
+      </listView1>
+    </ReorderColumnForm>
+    <TypeSetForm>
+      <button2 text="Anuleaza" />
+      <button1 text="OK" />
+    </TypeSetForm>
+    <StatusForm>
+      <button1 text="Refresh" />
+      <tabControl1 type="System.Windows.Forms.TabControl">
+        <tabPage1 text="Stare server" />
+        <tabPage2 text="Stare variabile" />
+        <tabPage5 text="Stare variabile" />
+      </tabControl1>
+	  <listView1 type="System.Windows.Forms.ListView">
+        <c0 text="Nume variabila" />
+        <c1 text="Valoare" />
+      </listView1>
+	  <listView2 type="System.Windows.Forms.ListView">
+        <c0 text="Nume variabila" />
+        <c1 text="Valoare" />
+      </listView2>
+      <listView3 type="System.Windows.Forms.ListView">
+        <c0 text="Nume variabila" />
+        <c1 text="Valoare" />
+      </listView3>
+	</StatusForm>
+    <TableDiagnosticForm>
+      <checkBox1 text="Toate/Nici una" />
+      <label1 text="Baza de date" />
+      <comboBox1 type="System.Windows.Forms.ComboBox" />
+      <button1 text="OK" />
+      <button2 text="OK" />
+      <button3 text="OK" />
+      <button4 text="OK" />
+	  <listView1 type="System.Windows.Forms.ListView">
+        <c0 text="Tabele" />
+      </listView1>
+      <tabControl1 type="System.Windows.Forms.TabControl">
+        <tabPage1 text="Verifica" />
+        <tabPage2 text="Analizeaza" />
+        <tabPage5 text="Optimizeaza" />
+        <tabPage6 text="Repara" />
+      </tabControl1>
+    </TableDiagnosticForm>
+    <TableStatusForm>
+	<listView1 type="System.Windows.Forms.ListView">
+        <c0 text="Proprietate" />
+        <c1 text="Valoare" />
+      </listView1>
+	</TableStatusForm>  
+    <TypeCalendarForm>
+      <button2 text="" />
+      <button1 text="" />
+    </TypeCalendarForm>
+    <MySqlconnectionBuilder>
+      <label1 text="Aresa host MySql" />
+      <label2 text="Utilizator" />
+      <label5 text="Charset implicit" />
+      <label3 text="Parola" />
+      <label6 text="Baza de date" />
+      <label4 text="Port" />
+    </MySqlconnectionBuilder>
+    <MySQLDBBrowser>
+      <triggerMenu type="System.Windows.Forms.ContextMenuStrip">
+        <toolStripMenuItem22 text="Refresh" />
+        <toolStripMenuItem10 text="Creaza" />
+        <toolStripMenuItem11 text="Modofica" />
+        <toolStripMenuItem12 text="Sterge" />
+      </triggerMenu>
+      <procedureMenu type="System.Windows.Forms.ContextMenuStrip">
+        <toolStripMenuItem20 text="Refresh" />
+        <toolStripMenuItem7 text="Creaza" />
+        <toolStripMenuItem8 text="Modifica" />
+        <toolStripMenuItem9 text="Sterge" />
+      </procedureMenu>
+      <dataBaseMenu type="System.Windows.Forms.ContextMenuStrip">
+        <refreshToolStripMenuItem text="Refresh" />
+        <createToolStripMenuItem text="Creaza tabel" />
+        <alterDatabaseToolStripMenuItem text="Modifica" />
+        <advancedToolStripMenuItem text="Avansat">
+          <dropDatabaseToolStripMenuItem text="Sterge baza de date" />
+          <truncateToolStripMenuItem text="Trunchiaza" />
+          <emptyToolStripMenuItem text="Goleste" />
+        </advancedToolStripMenuItem>
+        <backupToolStripMenuItem text="Backup ca sql dump" />
+        <importToolStripMenuItem text="Restaurare din sql dump" />
+        <createSchemaToolStripMenuItem text="Creaza schema" />
+      </dataBaseMenu>
+      <functionMenu type="System.Windows.Forms.ContextMenuStrip">
+        <toolStripMenuItem24 text="Refresh" />
+        <newFunctionToolStripMenuItem text="Creaza" />
+        <alterFunctionToolStripMenuItem text="Modifica" />
+        <dropFunctionToolStripMenuItem text="Sterge" />
+      </functionMenu>
+      <serverMenu type="System.Windows.Forms.ContextMenuStrip">
+        <refresServerhMenuItem text="Refresh" />
+        <newQueryMenuItem text="Nou editor de interogari" />
+        <newDatabaseMenuItem text="Baza de date noua" />
+        <restoreDatabaseFromSqlDumpMenuItem text="Restaurare din SLQ dump" />
+        <reconnectMenuItem text="Reconectare" />
+        <disconnectMenuItem text="Deconectare" />
+        <tESTToolStripMenuItem text="TEST" />
+        <tEST2ToolStripMenuItem text="TEST2" />
+      </serverMenu>
+      <viewMenu type="System.Windows.Forms.ContextMenuStrip">
+        <toolStripMenuItem17 text="Refresh" />
+        <newViewToolStripMenuItem text="Creaza" />
+        <alterViewToolStripMenuItem text="Modifica" />
+        <dropViewToolStripMenuItem text="Sterge" />
+        <swowToolStripMenuItem text="Arata" />
+      </viewMenu>
+      <tableMenu type="System.Windows.Forms.ContextMenuStrip">
+        <refreshTabletoolStripMenuItem text="Refresh" />
+        <alterToolStripMenuItem text="Modifica" />
+        <manageIndexesToolStripMenuItem text="Indecsi" />
+        <viewReletionshipforeignKeysToolStripMenuItem text="Relatii/chei straine" />
+        <advancedToolStripMenuItem1 text="Avansat">
+          <reorderColumnsToolStripMenuItem text="Reordoneaza coloanele" />
+          <propertiesToolStripMenuItem text="Proprietati" />
+          <truncateToolStripMenuItem1 text="Trunchiaza" />
+        </advancedToolStripMenuItem1>
+        <dropTabelToolStripMenuItem text="Sterge" />
+        <emptyToolStripMenuItem1 text="Goleste" />
+        <renameToolStripMenuItem1 text="Redenumeste" />
+        <exportToolStripMenuItem text="Exporta">
+          <asSqldumpToolStripMenuItem text="Ca SQL dump" />
+          <asCSVFileToolStripMenuItem text="Ca ..." />
+        </exportToolStripMenuItem>
+        <importToolStripMenuItem1 text="Importa din fisier CSV" />
+        <createTriggerToolStripMenuItem text="Creaza Trigger" />
+        <viewDDLDefinitionToolStripMenuItem text="DDL" />
+        <copyDDLDefinitionToolStripMenuItem text="Copiaza DDL" />
+      </tableMenu>
+      <contextMenuStrip1 type="System.Windows.Forms.ContextMenuStrip">
+        <setTuNULLToolStripMenuItem text="Seteaza ca NULL" />
+        <copyToolStripMenuItem text="Copiaza data" />
+      </contextMenuStrip1>
+      <toolsMenu type="System.Windows.Forms.ContextMenuStrip">
+        <serverStatusToolStripMenuItem text="Stare server" />
+        <tableDiangosticToolStripMenuItem text="Diagnostic tabel" />
+        <flushToolStripMenuItem text="Flush" />
+      </toolsMenu>
+    </MySQLDBBrowser>
+  </DBMS.MySQL>
+  </root>

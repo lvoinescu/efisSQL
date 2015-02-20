@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<root xmlns:x="urn:1">
+  <DBMS.MySQL>
+    <BackUpDataForm>
+      <button3 text="Stop" />
+      <label2 text="Status" />
+      <label1 text="File name" />
+      <button2 text="..." />
+      <button1 text="Export" />
+      <label3 text="Database" />
+    </BackUpDataForm>
+    <AlterTableForm>
+      <outPut text="Output" />
+      <label2 text="CheckSum" />
+      <label6 text="Password" />
+      <label4 text="Average row length" />
+      <label9 text="Raid type" />
+      <label5 text="Coment" />
+      <label8 text="Row format" />
+      <label7 text="Delay key write" />
+      <label3 text="Autoincrement" />
+      <label1 text="Engine" />
+      <button2 text="Refresh" />
+      <button1 text="Alter" />
+      <dg1 type="System.Windows.Forms.DataGridView">
+        <Column1 text="id" />
+        <Column2 text="type" />
+        <Column3 text="length/set" />
+        <Column6 text="default" />
+        <collation text="collation" />
+        <Column4 text="primary key" />
+        <Column7 text="auto increment" />
+        <Column5 text="not null" />
+        <Column8 text="zero fill" />
+        <unsigned text="unsigned" />
+        <Column9 text="comment" />
+      </dg1>
+      <label10 text="Table name" />
+    </AlterTableForm>
+    <ExecuteBatchForm>
+      <dg type="System.Windows.Forms.DataGridView">
+        <Column1 text="No." />
+        <Column2 text="Length (bytes)" />
+        <Column4 text="Show/Preview" />
+      </dg>
+    </ExecuteBatchForm>
+    <ExportData>
+      <button1 text="Export" />
+      <label5 text="File name" />
+      <button2 text="Browse" />
+      <label4 text="Lines terminated by" />
+      <label3 text="Fields escaped by" />
+      <label2 text="Fields eclosed by" />
+      <label1 text="Fields terminated by" />
+    </ExportData>
+    <FlushForm>
+      <button2 text="Close" />
+      <button1 text="Flush" />
+    </FlushForm>
+    <ImportFromCSV2TableForm>
+      <button2 text="Import" />
+      <button1 text="..." />
+      <label5 text="lines" />
+      <label7 text="Terminated by" />
+      <label4 text="Escaped by" />
+      <label3 text="Enclosed by" />
+      <label2 text="Terminated by" />
+      <label1 text="Table" />
+    </ImportFromCSV2TableForm>
+    <IndexForm>
+      <label1 text="Drag and drop columns below in the right listview to modify index" />
+      <button4 text="Delete" />
+      <button1 text="New" />
+      <label2 text="Sort columns by dragging" />
+      <button2 text="Apply" />
+      <button5 text="Remove" />
+    </IndexForm>
+    <MySQLDBBrowser>
+      <triggerMenu type="System.Windows.Forms.ContextMenuStrip">
+        <toolStripMenuItem22 text="Refresh" />
+        <toolStripMenuItem10 text="New trigger" />
+        <toolStripMenuItem11 text="Alter trigger" />
+        <toolStripMenuItem12 text="Drop trigger" />
+      </triggerMenu>
+      <procedureMenu type="System.Windows.Forms.ContextMenuStrip">
+        <toolStripMenuItem20 text="Refresh" />
+        <toolStripMenuItem7 text="New procedure" />
+        <toolStripMenuItem8 text="Alter proccedure" />
+        <toolStripMenuItem9 text="Drop procedure" />
+      </procedureMenu>
+      <dataBaseMenu type="System.Windows.Forms.ContextMenuStrip">
+        <refreshToolStripMenuItem text="Refresh" />
+        <createToolStripMenuItem text="Create table" />
+        <alterDatabaseToolStripMenuItem text="Alter" />
+        <advancedToolStripMenuItem text="Advanced">
+          <dropDatabaseToolStripMenuItem text="Drop database" />
+          <truncateToolStripMenuItem text="Truncate" />
+          <emptyToolStripMenuItem text="Empty" />
+        </advancedToolStripMenuItem>
+        <backupToolStripMenuItem text="Backup as sql dump" />
+        <importToolStripMenuItem text="Restore from sql dump" />
+        <createSchemaToolStripMenuItem text="Create schema" />
+      </dataBaseMenu>
+      <functionMenu type="System.Windows.Forms.ContextMenuStrip">
+        <toolStripMenuItem24 text="Refresh" />
+        <newFunctionToolStripMenuItem text="New function" />
+        <alterFunctionToolStripMenuItem text="Alter function" />
+        <dropFunctionToolStripMenuItem text="Drop function" />
+      </functionMenu>
+      <serverMenu type="System.Windows.Forms.ContextMenuStrip">
+        <refresServerhMenuItem text="Refresh" />
+        <newQueryMenuItem text="New query editor" />
+        <newDatabaseMenuItem text="New database" />
+        <restoreDatabaseFromSqlDumpMenuItem text="Restore database from sql dump" />
+        <reconnectMenuItem text="Reconnect" />
+        <disconnectMenuItem text="Disconnect" />
+        <tESTToolStripMenuItem text="TEST" />
+        <tEST2ToolStripMenuItem text="TEST2" />
+      </serverMenu>
+      <viewMenu type="System.Windows.Forms.ContextMenuStrip">
+        <toolStripMenuItem17 text="Refresh" />
+        <newViewToolStripMenuItem text="New view" />
+        <alterViewToolStripMenuItem text="Alter view" />
+        <dropViewToolStripMenuItem text="Drop view" />
+        <swowToolStripMenuItem text="Show" />
+      </viewMenu>
+      <tableMenu type="System.Windows.Forms.ContextMenuStrip">
+        <refreshTabletoolStripMenuItem text="Refresh" />
+        <alterToolStripMenuItem text="Alter" />
+        <manageIndexesToolStripMenuItem text="Indexes" />
+        <viewReletionshipforeignKeysToolStripMenuItem text="Reletionship/foreign keys" />
+        <advancedToolStripMenuItem1 text="Advanced">
+          <reorderColumnsToolStripMenuItem text="Reorder columns" />
+          <propertiesToolStripMenuItem text="Properties" />
+          <truncateToolStripMenuItem1 text="Truncate" />
+        </advancedToolStripMenuItem1>
+        <dropTabelToolStripMenuItem text="Drop" />
+        <emptyToolStripMenuItem1 text="Empty" />
+        <renameToolStripMenuItem1 text="Rename" />
+        <exportToolStripMenuItem text="Export">
+          <asSqldumpToolStripMenuItem text="As SQL dump" />
+          <asCSVFileToolStripMenuItem text="As ..." />
+        </exportToolStripMenuItem>
+        <importToolStripMenuItem1 text="Import from CSV file" />
+        <createTriggerToolStripMenuItem text="Create Trigger" />
+        <viewDDLDefinitionToolStripMenuItem text="View DDL definition" />
+        <copyDDLDefinitionToolStripMenuItem text="Copy DDL definition" />
+      </tableMenu>
+      <contextMenuStrip1 type="System.Windows.Forms.ContextMenuStrip">
+        <setTuNULLToolStripMenuItem text="Set tu NULL" />
+        <copyToolStripMenuItem text="Copy data" />
+      </contextMenuStrip1>
+      <toolsMenu type="System.Windows.Forms.ContextMenuStrip">
+        <serverStatusToolStripMenuItem text="Server status" />
+        <tableDiangosticToolStripMenuItem text="Table diagnostic" />
+        <flushToolStripMenuItem text="Flush" />
+      </toolsMenu>
+    </MySQLDBBrowser>
+  </DBMS.MySQL>
+</root>

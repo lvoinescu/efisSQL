@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{522E1848-AAF3-4195-96A1-7FD1001CE127}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DBMS.MySQL</RootNamespace>
+    <AssemblyName>DBMS.MySQL</AssemblyName>
+    <SourceAnalysisOverrideSettingsFile>C:\Users\Sam\AppData\Roaming\ICSharpCode/SharpDevelop3.0\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpDevelop, Version=3.2.1.6466, Culture=neutral, PublicKeyToken=f829da5c02be14ee, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SharpDevelop\3.0\bin\ICSharpCode.SharpDevelop.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpDevelop.Widgets, Version=3.2.1.6466, Culture=neutral, PublicKeyToken=f829da5c02be14ee, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SharpDevelop\3.0\bin\ICSharpCode.SharpDevelop.Widgets.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.TextEditor, Version=3.2.1.6466, Culture=neutral, PublicKeyToken=4d61825e8dd49f1a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\ICSharpCode.TextEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="MagicLibrary, Version=1.7.4.0, Culture=neutral, PublicKeyToken=3a6eb82f876a49bc">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Libs\MagicLibrary.DLL</HintPath>
+    </Reference>
+    <Reference Include="mysql.data">
+      <HintPath>..\..\Libs\mysql.data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MySQLCodeCompletionProvider.cs" />
+    <Compile Include="MySQLConnectionSetting.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AlterDataBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AlterDataBase.Designer.cs">
+      <DependentUpon>AlterDataBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AlterTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AlterTableForm.Designer.cs">
+      <DependentUpon>AlterTableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BackUpDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\BackUpDataForm.Designer.cs">
+      <DependentUpon>BackUpDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ExecuteBatchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ExecuteBatchForm.Designer.cs">
+      <DependentUpon>ExecuteBatchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ExportData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ExportData.Designer.cs">
+      <DependentUpon>ExportData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FlushForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FlushForm.Designer.cs">
+      <DependentUpon>FlushForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ImportFromCSV2TableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ImportFromCSV2TableForm.Designer.cs">
+      <DependentUpon>ImportFromCSV2TableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\IndexForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\IndexForm.Designer.cs">
+      <DependentUpon>IndexForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\InputNewIndexForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\InputNewIndexForm.Designer.cs">
+      <DependentUpon>InputNewIndexForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MySqlConnexionBuilder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\MySQLDBBrowser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\NewDbForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\NewDbForm.Designer.cs">
+      <DependentUpon>NewDbForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\NewReferenceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\NewReferenceForm.Designer.cs">
+      <DependentUpon>NewReferenceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\QueryParameter.cs" />
+    <Compile Include="UI\ReferenceTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReferenceTableForm.Designer.cs">
+      <DependentUpon>ReferenceTableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReorderColumnForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReorderColumnForm.Designer.cs">
+      <DependentUpon>ReorderColumnForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SetTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SetTypeForm.Designer.cs">
+      <DependentUpon>SetTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\StatusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\StatusForm.Designer.cs">
+      <DependentUpon>StatusForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TableDiagnosticForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\TableDiagnosticForm.Designer.cs">
+      <DependentUpon>TableDiagnosticForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TableStatusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\TableStatusForm.Designer.cs">
+      <DependentUpon>TableStatusForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\AlterDataBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AlterDataBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AlterTableForm.resx">
+      <DependentUpon>AlterTableForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\BackUpDataForm.resx">
+      <DependentUpon>BackUpDataForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ExecuteBatchForm.resx">
+      <DependentUpon>ExecuteBatchForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ExportData.resx">
+      <DependentUpon>ExportData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FlushForm.resx">
+      <DependentUpon>FlushForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ImportFromCSV2TableForm.resx">
+      <DependentUpon>ImportFromCSV2TableForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\IndexForm.resx">
+      <DependentUpon>IndexForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\InputNewIndexForm.resx">
+      <DependentUpon>InputNewIndexForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MySqlConnexionBuilder.resx">
+      <DependentUpon>MySqlConnexionBuilder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MySQLDBBrowser.resx">
+      <DependentUpon>MySQLDBBrowser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\NewDbForm.resx">
+      <DependentUpon>NewDbForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\NewReferenceForm.resx">
+      <DependentUpon>NewReferenceForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReferenceTableForm.resx">
+      <DependentUpon>ReferenceTableForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReorderColumnForm.resx">
+      <DependentUpon>ReorderColumnForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SetTypeForm.resx">
+      <DependentUpon>SetTypeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\StatusForm.resx">
+      <DependentUpon>StatusForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TableDiagnosticForm.resx">
+      <DependentUpon>TableDiagnosticForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TableStatusForm.resx">
+      <DependentUpon>TableStatusForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DMBS.core\DBMS.core.csproj">
+      <Project>{ABE032FA-3415-4707-8709-B888E31A3DE5}</Project>
+      <Name>DBMS.core</Name>
+    </ProjectReference>
+    <Folder Include="UI" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sql-query.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,91 @@
+  <DBMS.core>
+    <DataUserView>
+      <historyMenuStrip type="System.Windows.Forms.ContextMenuStrip">
+        <executeToolStripMenuItem text="Executa interogarea" />
+        <executeSelectionHistoryStripMenuItem text="Executa selectia" />
+        <saveHistoryToolStripMenuItem text="Salveaza istoricul" />
+        <copyToolStripMenuItem text="Copiaza" />
+        <clearHistoryToolStripMenuItem text="Sterge istoricul" />
+      </historyMenuStrip>
+      <queryMenuStrip type="System.Windows.Forms.ContextMenuStrip">
+        <ExecuteAllQueryMenuItem text="Executa toate interogarile" />
+        <ExecuteCurrentQuerryMenuItem text="Executa interogarea curenta" />
+        <executeSelectionToolStripMenuItem text="Executa selectia" />
+        <toolStripMenuItem6 text="Insereaza template" />
+        <CopyMenuItem text="Copiaza" />
+        <CutMenuItem text="Taie" />
+        <PasteMenuItem text="Lipeste" />
+        <clearToolStripMenuItem text="Sterge" />
+        <findToolStripMenuItem text="Cauta" />
+        <replaceToolStripMenuItem text="Inlocuieste" />
+        <commentToolStripMenuItem text="Comenteaza" />
+        <uncommentToolStripMenuItem text="Decomenteaza" />
+      </queryMenuStrip>
+      <toolStrip3 text="toolStrip3" type="System.Windows.Forms.ToolStrip">
+        <tableStatus text="..." />
+      </toolStrip3>
+      <tableToolStrip text="toolStrip1" type="System.Windows.Forms.ToolStrip">
+        <exportStripButton text="Exporta" />
+        <addRowStripButton text="Adauga inregistrare" />
+        <saveStripButton text="Salveaza" />
+        <deleteRowsStripButton text="Sterge" />
+        <cancelChangesStripButton text="Refresh" />
+        <autosizeColumnLabel text="Auto-dimensionare coloane" />
+        <comboBoxColumns type="System.Windows.Forms.ToolStripComboBox">
+          <i0 text="Toate celulele" />
+          <i1 text="Toate celulele - exceptie header" />
+          <i2 text="Header celule" />
+          <i3 text="Celule afisate" />
+          <i4 text="Celule afisate - exceptie header" />
+          <i5 text="Umple" />
+          <i6 text="Nici unua" />
+        </comboBoxColumns>
+        <comboBoxRows type="System.Windows.Forms.ToolStripComboBox">
+          <i0 text="Toate randurile" />
+          <i1 text="Afisare limitata" />
+        </comboBoxRows>
+        <firstLabel text="Primul rand" />
+        <rowsLabel text="Randuri" />
+      </tableToolStrip>
+      <resultToolStrip text="toolStrip2" type="System.Windows.Forms.ToolStrip">
+        <exportResultTable text="Exporta" />
+        <refreshResultTable text="Refresh" />
+        <resultAutoSizeColumnLabel text="Autosize columns" />
+        <autoSizeColumnsResult type="System.Windows.Forms.ToolStripComboBox">
+          <i0 text="Toate celulele" />
+          <i1 text="Toate celulele - exceptie header" />
+          <i2 text="Header celule" />
+          <i3 text="Celule afisate" />
+          <i4 text="Celule afisate - exceptie header" />
+          <i5 text="Umple" />
+          <i6 text="Nici unua" />
+        </autoSizeColumnsResult>
+      </resultToolStrip>
+      <tabControl type="System.Windows.Forms.TabControl">
+        <tablePage text="Tabel" />
+        <resultPage text="Rezultat" />
+        <historyPage text="Istoric" />
+      </tabControl>
+    </DataUserView>
+  <BlobViewForm>
+      <radioButton3 text="Afisare in hexa" />
+      <checkBox1 text="Alungit" />
+      <comboBox1 type="System.Windows.Forms.ComboBox">
+        <i0 text="ASCII" />
+        <i1 text="UTF7" />
+        <i2 text="UTF8" />
+        <i3 text="DEFAULT" />
+        <i4 text="UTF32" />
+        <i5 text="UNICODE" />
+      </comboBox1>
+      <label1 text="Codificare" />
+      <button5 text="Salvare" />
+      <button4 text="NULL" />
+      <button1 text="Incarca" />
+      <radioButton0 text="Fisier" />
+      <radioButton1 text="Text" />
+      <radioButton2 text="Imagine" />
+      <button3 text="Anuleaza" />
+      <button2 text="OK" />
+    </BlobViewForm>
+  </DBMS.core>

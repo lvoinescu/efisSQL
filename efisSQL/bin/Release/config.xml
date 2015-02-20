@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ConfigurationManager xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Connections>
+    <Connection xsi:type="MySqlConnectionSetting" ConnectionName="New MySql connection">
+      <Id>0</Id>
+      <Host>localhost</Host>
+      <UserName>root</UserName>
+      <Port>3306</Port>
+      <CharSet>cp932</CharSet>
+      <Password>tY+HwG44cb4=</Password>
+      <Databases />
+    </Connection>
+    <Connection xsi:type="SQLiteConnectionSetting" ConnectionName="SQLite">
+      <Id>1</Id>
+      <DataSource>C:\testsqlite.txt</DataSource>
+      <Password>RXYWqfTmwfA=</Password>
+      <UsePre33xFormat>true</UsePre33xFormat>
+      <ReadOnly>false</ReadOnly>
+      <UseUTF16>false</UseUTF16>
+      <IsNew>false</IsNew>
+    </Connection>
+    <Connection xsi:type="MySqlConnectionSetting" ConnectionName="Ploiesti">
+      <Id>2</Id>
+      <Host>92.82.129.58</Host>
+      <UserName>root</UserName>
+      <Port>3306</Port>
+      <CharSet>(default)</CharSet>
+      <Password>6xwQDCPtuD8=</Password>
+      <Databases />
+    </Connection>
+    <Connection xsi:type="MySqlConnectionSetting" ConnectionName="simtechoanapc">
+      <Id>3</Id>
+      <Host>simtechoana-pc</Host>
+      <UserName>sam</UserName>
+      <Port>3306</Port>
+      <CharSet>cp932</CharSet>
+      <Password>+GL/4Jststk=</Password>
+      <Databases />
+    </Connection>
+  </Connections>
+</ConfigurationManager>

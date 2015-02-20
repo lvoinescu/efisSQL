@@ -1,0 +1,371 @@
+  <DBMS.MySQL>
+    <AlterTableForm>
+      <outPut text="Output" />
+      <checksum type="System.Windows.Forms.ComboBox">
+        <i0 text="0" />
+        <i1 text="1" />
+        <i2 text="DEFAULT" />
+      </checksum>
+      <label2 text="CheckSum" />
+      <raidType type="System.Windows.Forms.ComboBox">
+        <i0 text="1" />
+        <i1 text="DEFAULT" />
+        <i2 text="RAID0" />
+        <i3 text="STRIPED" />
+      </raidType>
+      <rowFormat type="System.Windows.Forms.ComboBox">
+        <i0 text="COMPACT" />
+        <i1 text="DYNAMIC" />
+        <i2 text="DEFAULT" />
+        <i3 text="FIXED" />
+      </rowFormat>
+      <delaykeywrite type="System.Windows.Forms.ComboBox">
+        <i0 text="0" />
+        <i1 text="1" />
+        <i2 text="DEFAULT" />
+      </delaykeywrite>
+      <engine type="System.Windows.Forms.ComboBox">
+        <i0 text="InnoDB" />
+        <i1 text="MyISAM" />
+        <i2 text="Archive" />
+      </engine>
+      <label6 text="Password" />
+      <label4 text="Average row length" />
+      <label9 text="Raid type" />
+      <label5 text="Coment" />
+      <label8 text="Row format" />
+      <label7 text="Delay key write" />
+      <label3 text="Autoincrement" />
+      <label1 text="Engine" />
+      <groupBox1 text="Advanced" />
+      <button2 text="Refresh" />
+      <button1 text="Alter" />
+      <dg1 type="System.Windows.Forms.DataGridView">
+        <Column1 text="id" />
+        <Column2 text="type" />
+        <Column3 text="length/set" />
+        <Column6 text="default" />
+        <collation text="collation" />
+        <Column4 text="primary key" />
+        <Column7 text="auto increment" />
+        <Column5 text="not null" />
+        <Column8 text="zero fill" />
+        <unsigned text="unsigned" />
+        <Column9 text="comment" />
+      </dg1>
+      <label10 text="Table name" />
+    </AlterTableForm>
+    <BackUpDataForm>
+      <button3 text="Stop" />
+      <label2 text="Status" />
+      <checkBox15 text="All/None" />
+      <dataBaseComboBox type="System.Windows.Forms.ComboBox" />
+      <label1 text="File name" />
+      <button2 text="..." />
+      <button1 text="Export" />
+      <label3 text="Database" />
+    </BackUpDataForm>
+    <ExecuteBatchForm>
+      <dg type="System.Windows.Forms.DataGridView">
+        <Column1 text="No." />
+        <Column2 text="Length (bytes)" />
+        <Column4 text="Show/Preview" />
+      </dg>
+      <toolStrip1 text="toolStrip1" type="System.Windows.Forms.ToolStrip">
+        <toolStripLabel1 text="File path:" />
+        <toolStripButton3 text="  ...  " />
+        <toolStripButton1 text="Run" />
+        <toolStripButton4 text="Stop" />
+        <toolStripButton2 text="Clear" />
+        <mode type="System.Windows.Forms.ToolStripComboBox">
+          <i0 text="Read &amp; execute" />
+          <i1 text="Read only" />
+        </mode>
+      </toolStrip1>
+    </ExecuteBatchForm>
+    <ExportData>
+      <checkBox1 text="Select/deselect all" />
+      <button1 text="Export" />
+      <label5 text="File name" />
+      <button2 text="Browse" />
+      <label4 text="Lines terminated by" />
+      <label3 text="Fields escaped by" />
+      <label2 text="Fields eclosed by" />
+      <label1 text="Fields terminated by" />
+    </ExportData>
+    <FlushForm>
+      <checkBox1 text="Logs" />
+      <checkBox2 text="Privileges" />
+      <checkBox3 text="Tables" />
+      <checkBox4 text="Hosts" />
+      <checkBox5 text="Status" />
+      <checkBox9 text="Query cache" />
+      <checkBox6 text="User_Resources" />
+      <checkBox8 text="Tables with read lock" />
+      <checkBox7 text="Des_key_file" />
+      <groupBox1 text="" />
+      <checkBox11 text="All/None" />
+      <button2 text="Close" />
+      <button1 text="Flush" />
+      <checkBox10 text="Use NO_Write_To_binlog" />
+    </FlushForm>
+    <ImportFromCSV2TableForm>
+      <button2 text="Import" />
+      <button1 text="..." />
+      <checkBox2 text="Ignore" />
+      <label5 text="lines" />
+      <groupBox5 text="" />
+      <checkBox6 text="Ignore" />
+      <checkBox5 text="Replace" />
+      <groupBox4 text="" />
+      <checkBox4 text="Concurrent" />
+      <checkBox3 text="Low priority" />
+      <groupBox3 text="" />
+      <comboBox7 type="System.Windows.Forms.ComboBox">
+        <i0 text="\r\n" />
+        <i1 text="\n" />
+        <i2 text="\r" />
+      </comboBox7>
+      <label7 text="Terminated by" />
+      <groupBox2 text="Lines" />
+      <comboBox4 type="System.Windows.Forms.ComboBox">
+        <i0 text="\\" />
+      </comboBox4>
+      <label4 text="Escaped by" />
+      <comboBox3 type="System.Windows.Forms.ComboBox">
+        <i0 text="&quot;" />
+        <i1 text="'" />
+        <i2 text="`" />
+      </comboBox3>
+      <label3 text="Enclosed by" />
+      <comboBox2 type="System.Windows.Forms.ComboBox">
+        <i0 text="," />
+        <i1 text=";" />
+        <i2 text="," />
+        <i3 text="|" />
+      </comboBox2>
+      <label2 text="Terminated by" />
+      <groupBox1 text="Fields" />
+      <checkBox1 text="All/None" />
+      <label1 text="Table" />
+      <comboBox1 type="System.Windows.Forms.ComboBox" />
+    </ImportFromCSV2TableForm>
+    <IndexForm>
+      <label1 text="Drag and drop columns below in the right listview to modify index" />
+      <groupBox2 text="Table columns" />
+      <button4 text="Delete" />
+      <checkBox2 text="Fulltext" />
+      <button1 text="New" />
+      <checkBox1 text="Unique" />
+      <label2 text="Sort columns by dragging" />
+      <button2 text="Apply" />
+      <button5 text="Remove" />
+      <groupBox1 text="Index properties" />
+    </IndexForm>
+    <InputNewIndexForm>
+      <checkBox1 text="Is primary index" />
+      <label1 text="Input index name below" />
+      <button2 text="Cancel" />
+      <button1 text="OK" />
+    </InputNewIndexForm>
+    <NewDbForm>
+      <button2 text="Cancel" />
+      <button1 text="OK" />
+      <label1 text="Database name" />
+    </NewDbForm>
+    <NewReferenceForm>
+      <button2 text="Close" />
+      <button1 text="Create" />
+      <checkBox2 text="" />
+      <checkBox1 text="" />
+      <label2 text="Contraint name" />
+      <label1 text="Reference table" />
+      <comboBox1 type="System.Windows.Forms.ComboBox" />
+      <radioButton8 text="Restrict" />
+      <radioButton7 text="Set NULL" />
+      <radioButton6 text="No action" />
+      <radioButton5 text="Cascade" />
+      <groupBox2 text="    On delete" />
+      <radioButton4 text="Restrict" />
+      <radioButton3 text="Set NULL" />
+      <radioButton2 text="No action" />
+      <radioButton1 text="Cascade" />
+      <groupBox1 text="     On update" />
+      <dg1 type="System.Windows.Forms.DataGridView">
+        <Column1 text="Column" />
+        <Column2 text="Reference column" />
+      </dg1>
+    </NewReferenceForm>
+    <ReferenceTableForm>
+      <button2 text="Add" />
+      <button3 text="Close" />
+      <button1 text="Delete" />
+    </ReferenceTableForm>
+    <ReorderColumnForm>
+      <button5 text="" />
+      <button4 text="Cancel" />
+      <button3 text="OK" />
+      <button2 text="" />
+      <button1 text="" />
+    </ReorderColumnForm>
+    <TypeSetForm>
+      <button2 text="Cancel" />
+      <button1 text="OK" />
+    </TypeSetForm>
+    <StatusForm>
+      <button1 text="Refresh" />
+      <tabControl1 type="System.Windows.Forms.TabControl">
+        <tabPage1 text="Server Status" />
+        <tabPage2 text="Variables status" />
+        <tabPage5 text="Variables status" />
+      </tabControl1>
+    </StatusForm>
+    <TableDiagnosticForm>
+      <checkBox1 text="All/None" />
+      <label1 text="DataBase" />
+      <comboBox1 type="System.Windows.Forms.ComboBox" />
+      <button1 text="OK" />
+      <button2 text="OK" />
+      <button3 text="OK" />
+      <button4 text="OK" />
+      <tabControl1 type="System.Windows.Forms.TabControl">
+        <tabPage1 text="Check" />
+        <tabPage2 text="Analyze" />
+        <tabPage5 text="Optimise" />
+        <tabPage6 text="Repair" />
+      </tabControl1>
+    </TableDiagnosticForm>
+    <TableStatusForm />
+    <TypeCalendarForm>
+      <button2 text="" />
+      <button1 text="" />
+    </TypeCalendarForm>
+    <MySqlconnectionBuilder>
+      <label1 text="MySql host address" />
+      <charSet type="System.Windows.Forms.ComboBox">
+        <i0 text="(default)" />
+        <i1 text="armscii8" />
+        <i2 text="ascii" />
+        <i3 text="big5" />
+        <i4 text="binary" />
+        <i5 text="cp1250" />
+        <i6 text="cp1251" />
+        <i7 text="cp1256" />
+        <i8 text="cp1257" />
+        <i9 text="cp850" />
+        <i10 text="cp852" />
+        <i11 text="cp866" />
+        <i12 text="cp932" />
+        <i13 text="dec8" />
+        <i14 text="eucimps" />
+        <i15 text="euckr" />
+        <i16 text="gb2312" />
+        <i17 text="gbk" />
+        <i18 text="geostd8" />
+        <i19 text="greek" />
+        <i20 text="hebrew" />
+        <i21 text="hp8" />
+        <i22 text="keybcs2" />
+        <i23 text="koi8r" />
+        <i24 text="koi8u" />
+        <i25 text="latin1" />
+        <i26 text="latin2" />
+        <i27 text="latin5" />
+        <i28 text="latin7" />
+        <i29 text="macce" />
+        <i30 text="macroma" />
+        <i31 text="sjis" />
+        <i32 text="swe7" />
+        <i33 text="tis620" />
+        <i34 text="ucs2" />
+        <i35 text="ujis" />
+        <i36 text="utf8" />
+      </charSet>
+      <label2 text="User name" />
+      <label5 text="Default charset" />
+      <label3 text="Password" />
+      <label6 text="Database(s)" />
+      <label4 text="Port" />
+    </MySqlconnectionBuilder>
+    <MySQLDBBrowser>
+      <triggerMenu type="System.Windows.Forms.ContextMenuStrip">
+        <toolStripMenuItem22 text="Refresh" />
+        <toolStripMenuItem10 text="New trigger" />
+        <toolStripMenuItem11 text="Alter trigger" />
+        <toolStripMenuItem12 text="Drop trigger" />
+      </triggerMenu>
+      <procedureMenu type="System.Windows.Forms.ContextMenuStrip">
+        <toolStripMenuItem20 text="Refresh" />
+        <toolStripMenuItem7 text="New procedure" />
+        <toolStripMenuItem8 text="Alter proccedure" />
+        <toolStripMenuItem9 text="Drop procedure" />
+      </procedureMenu>
+      <dataBaseMenu type="System.Windows.Forms.ContextMenuStrip">
+        <refreshToolStripMenuItem text="Refresh" />
+        <createToolStripMenuItem text="Create table" />
+        <alterDatabaseToolStripMenuItem text="Alter" />
+        <advancedToolStripMenuItem text="Advanced">
+          <dropDatabaseToolStripMenuItem text="Drop database" />
+          <truncateToolStripMenuItem text="Truncate" />
+          <emptyToolStripMenuItem text="Empty" />
+        </advancedToolStripMenuItem>
+        <backupToolStripMenuItem text="Backup as sql dump" />
+        <importToolStripMenuItem text="Restore from sql dump" />
+        <createSchemaToolStripMenuItem text="Create schema" />
+      </dataBaseMenu>
+      <functionMenu type="System.Windows.Forms.ContextMenuStrip">
+        <toolStripMenuItem24 text="Refresh" />
+        <newFunctionToolStripMenuItem text="New function" />
+        <alterFunctionToolStripMenuItem text="Alter function" />
+        <dropFunctionToolStripMenuItem text="Drop function" />
+      </functionMenu>
+      <serverMenu type="System.Windows.Forms.ContextMenuStrip">
+        <refresServerhMenuItem text="Refresh" />
+        <newQueryMenuItem text="New query editor" />
+        <newDatabaseMenuItem text="New database" />
+        <restoreDatabaseFromSqlDumpMenuItem text="Restore database from sql dump" />
+        <reconnectMenuItem text="Reconnect" />
+        <disconnectMenuItem text="Disconnect" />
+        <tESTToolStripMenuItem text="TEST" />
+        <tEST2ToolStripMenuItem text="TEST2" />
+      </serverMenu>
+      <viewMenu type="System.Windows.Forms.ContextMenuStrip">
+        <toolStripMenuItem17 text="Refresh" />
+        <newViewToolStripMenuItem text="New view" />
+        <alterViewToolStripMenuItem text="Alter view" />
+        <dropViewToolStripMenuItem text="Drop view" />
+        <swowToolStripMenuItem text="Show" />
+      </viewMenu>
+      <tableMenu type="System.Windows.Forms.ContextMenuStrip">
+        <refreshTabletoolStripMenuItem text="Refresh" />
+        <alterToolStripMenuItem text="Alter" />
+        <manageIndexesToolStripMenuItem text="Indexes" />
+        <viewReletionshipforeignKeysToolStripMenuItem text="Reletionship/foreign keys" />
+        <advancedToolStripMenuItem1 text="Advanced">
+          <reorderColumnsToolStripMenuItem text="Reorder columns" />
+          <propertiesToolStripMenuItem text="Properties" />
+          <truncateToolStripMenuItem1 text="Truncate" />
+        </advancedToolStripMenuItem1>
+        <dropTabelToolStripMenuItem text="Drop" />
+        <emptyToolStripMenuItem1 text="Empty" />
+        <renameToolStripMenuItem1 text="Rename" />
+        <exportToolStripMenuItem text="Export">
+          <asSqldumpToolStripMenuItem text="As SQL dump" />
+          <asCSVFileToolStripMenuItem text="As ..." />
+        </exportToolStripMenuItem>
+        <importToolStripMenuItem1 text="Import from CSV file" />
+        <createTriggerToolStripMenuItem text="Create Trigger" />
+        <viewDDLDefinitionToolStripMenuItem text="View DDL definition" />
+        <copyDDLDefinitionToolStripMenuItem text="Copy DDL definition" />
+      </tableMenu>
+      <contextMenuStrip1 type="System.Windows.Forms.ContextMenuStrip">
+        <setTuNULLToolStripMenuItem text="Set tu NULL" />
+        <copyToolStripMenuItem text="Copy data" />
+      </contextMenuStrip1>
+      <toolsMenu type="System.Windows.Forms.ContextMenuStrip">
+        <serverStatusToolStripMenuItem text="Server status" />
+        <tableDiangosticToolStripMenuItem text="Table diagnostic" />
+        <flushToolStripMenuItem text="Flush" />
+      </toolsMenu>
+    </MySQLDBBrowser>
+  </DBMS.MySQL>

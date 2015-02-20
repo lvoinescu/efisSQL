@@ -1,0 +1,87 @@
+  <SamDB>
+    <MainMDIManagerForm>
+      <mainToolStrip text="toolStrip1" type="System.Windows.Forms.ToolStrip">
+        <connectStripButton text="New connection" />
+        <disconnectStripButton text="Disconnect" />
+        <refreshStripButton text="Refresh" />
+        <openToolStripButton text="Open" />
+        <saveStripButton text="Save" />
+        <saveAllStripButton text="Save all" />
+        <cutToolStripButton text="C&amp;ut" />
+        <copyToolStripButton text="&amp;Copy" />
+        <pasteToolStripButton text="&amp;Paste" />
+        <printToolStripButton text="&amp;Print" />
+        <undoStripButton text="Undo" />
+        <redoStripButton text="Redo" />
+        <toolStripLabel3 text="       " />
+        <executeAlllStripButton text="Execute all querries" />
+        <executeCurrentStripButton text="Execute curent querry" />
+        <executeSelectionStripButton text="Execute selection" />
+        <toolStripLabel2 text="       " />
+        <viewStripSplitButton text="View">
+          <showQueryEditorResultToolStripMenuItem text="Show query editor &amp;&amp;  result" />
+          <showQueryEditorOnlyToolStripMenuItem text="Show query editor only" />
+          <showResultOutputOnlyToolStripMenuItem text="Show result output only" />
+          <showObjectBrowserToolStripMenuItem text="Show object browser" />
+        </viewStripSplitButton>
+        <backupStripButton text="Export database" />
+        <exportStripButton text="Import table" />
+        <importStripButton text="Export table" />
+        <restoreStripButton text="Execute batch file" />
+      </mainToolStrip>
+      <mainMenuStrip text="menuStrip1" type="System.Windows.Forms.MenuStrip">
+        <fileToolStripMenuItem text="File">
+          <newConnectionStripMenuItem text="New connection" />
+          <toolStripMenuItem1 text="New">
+            <queryToolStripMenuItem text="Query" />
+          </toolStripMenuItem1>
+          <openToolStripMenuItem text="Open" />
+          <saveToolStripMenuItem text="Save" />
+          <saveAsMenuItem text="Save as" />
+          <saveAllMenuItem text="Save all" />
+          <disconnectToolStripMenuItem text="Disconnect" />
+          <exitToolStripMenuItem text="Exit" />
+        </fileToolStripMenuItem>
+        <editToolStripMenuItem text="Edit">
+          <refreshToolStripMenuItem text="Refresh" />
+          <queryToolStripMenuItem1 text="Query" />
+          <undoToolStripMenuItem text="Undo" />
+          <redoToolStripMenuItem text="Redo" />
+          <cutToolStripMenuItem text="Cut" />
+          <copyToolStripMenuItem text="Copy" />
+          <pasteToolStripMenuItem text="Paste" />
+        </editToolStripMenuItem>
+        <dataToolStripMenuItem text="DataBase" />
+        <tableToolStripMenuItem text="Table" />
+        <toolsToolStripMenuItem text="Tools" />
+        <execToolStripMenuItem text="Exec">
+          <executeAllToolStripMenuItem text="Execute all" />
+          <executeCurrentOnlyToolStripMenuItem text="Execute current only" />
+          <executeSelectionOnlyToolStripMenuItem text="Execute selection only" />
+        </execToolStripMenuItem>
+        <windowsToolStripMenuItem text="Windows">
+          <tileHorizontalToolStripMenuItem text="Tile horizontal" />
+          <tileVerticalToolStripMenuItem text="Tile vertical" />
+          <cascadeToolStripMenuItem text="Cascade" />
+        </windowsToolStripMenuItem>
+        <helpToolStripMenuItem text="Help">
+          <aboutToolStripMenuItem text="About" />
+        </helpToolStripMenuItem>
+      </mainMenuStrip>
+    </MainMDIManagerForm>
+    <DBManagerForm />
+    <SelectDBEngineForm>
+      <dmbsTabControl type="System.Windows.Forms.TabControl">
+        <mysqlPage text="MySQL" />
+        <sqliteTab text="SQLite" />
+      </dmbsTabControl>
+      <button5 text="Test" />
+      <radioButton2 text="Fereastra noua" />
+      <radioButton1 text="Integreaza in fereastra existenta" />
+      <button1 text="Conectare" />
+      <button4 text="Save" />
+      <button3 text="Delete" />
+      <button2 text="New" />
+      <label1 text="Conexiune" />
+    </SelectDBEngineForm>
+  </SamDB>
