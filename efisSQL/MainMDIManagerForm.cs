@@ -25,8 +25,10 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.Odbc;
 using System.Drawing;
+using System.Reflection;
 using System.Text;
 using System.Windows.Forms;
+
 using DBMS;
 using DBMS.core;
 
@@ -334,8 +336,8 @@ namespace efisSQL
 
 		private void MainMDIManagerForm_Load(object sender, EventArgs e)
 		{
-			var assemblies = AppDomain.CurrentDomain.GetAssemblies();
-			foreach (var assembly in assemblies)
+			Assembly[] assemblies = AppDomain.CurrentDomain.GetAssemblies();
+			foreach (Assembly assembly in assemblies)
 			{
 				Console.WriteLine(assembly.GetName());
 			}
