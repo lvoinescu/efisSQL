@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -118,28 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAABAAEAEBAAAAAAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAA
-        AAD///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af//
-        /wH///8B////Af///wH///8B////AQAAAAMAAAAFAAAABQAAAAcAAAAHAAAABwAAAAcAAAAHY2NjZWpt
-        bP9qbWz/am1sV////wH///8B////Af///wGFiohhhYqIt2lubPVpbmz/hYqIt4WKiGH///8Ba2trh2pt
-        bP/Ky8v/1tbW/2ptbP////8B////AYWKiC9obGrlfYB/3Y+Qj+PCwsLz39/f/4mKidliZmThXV1dY2tu
-        bf+1t7f/iIuJ/8fHx/1qbWz/////AYWKiC9pbmz3kZKR4+ni2//Ss5b/zaF4/86fcv/TtJf/5NzV/2hr
-        av23uLj/hIeF/3J2dP1kaGbpam1sMf///wFobGrnqKmo7dzKuf/On3L/s4Vc0cqbcHfKm2+jrYBZzc6f
-        c//SzMX/kpWT/4WHhvVmaWjzU1dVGf///wGEiYdjgYSC4+HZ0f/On3L/zZxvmdCecXfQn3Jjzp5ygc+f
-        clXHl2x7zp9y/+DZ0v9laWfrcXZ0f////wH///8BgIWDx8TExPvKpoX9xZRpxc+dcovPn3F10aByX9Ce
-        c3PPnnRPz590ZbmKYb/LqYn9yMnJ+YKGhMH///8B////AWlubPvf39//zaB2/9mxj7Pmzba17NnHs+nT
-        wJnfvqKlz59xW9CedG3Pn3ODyZpu/dvb2/9pbmz5////Af///wFrcG7/29rY/86ecf/mzLTL7NvLzfDh
-        08fx5NfB8OLV5dGheG/Pn3N7z51yi86ecf/i4uL/a3Bu/////wH///8BZmtp/9na2v+/kGb/4sas+fHk
-        2fv06eD79Ovj+/Pp4P/t3c7x1KeA18+ecuXKo4H/2NnZ/2Zraf////8B////AXp+fHemqKf7xK+e+c6f
-        cv/x4tbn9+7n6/jy7PH16+P98ODR3du4l8POnnH/yrqt+aGko/d9gX9v////Af///wH///8Bam5s9dra
-        2v/Fpor7z59y/+vYx+316+Lr8+nf/ePIrt/On3L9xaiO+dvb2/9pbWvz////Af///wH///8B////AXyB
-        fzVscW//29va/8GplvnFl23xz6F1+86fcv/Ck2jxwq2b+d7e3v9rcG79gYWEMf///wH///8B////Af//
-        /wH///8BdXh3P2xvbfnKzMv/3Nva/9nW1P/Z1dH/2tjX/8nKyv9rbmz3eHx6O////wH///8B////Af//
-        /wH///8B////Af///wH///8BdXh2qWxwb/VtcXD/a3Bu/2pvbfV4fHqX////Af///wH///8B////Af//
-        /wH///8BAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA
-        //8AAP//AAD//w==
-</value>
+  <data name="updateNodeTimer.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>17, 17</value>
+  </data>
+  <data name="cellMenu.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>763, 17</value>
   </data>
 </root>

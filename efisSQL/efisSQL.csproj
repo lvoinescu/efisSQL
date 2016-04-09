@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="2.0">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -40,6 +40,7 @@
     <SignAssembly>True</SignAssembly>
     <DelaySign>False</DelaySign>
     <AssemblyOriginatorKeyMode>File</AssemblyOriginatorKeyMode>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -201,6 +202,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DBMS\DBMS.core\DBMS.core.csproj">
+      <Project>{ABE032FA-3415-4707-8709-B888E31A3DE5}</Project>
+      <Name>DBMS.core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DBMS\DBMS.MySql\DBMS.MySQL.csproj">
       <Project>{522E1848-AAF3-4195-96A1-7FD1001CE127}</Project>
       <Name>DBMS.MySQL</Name>
@@ -212,10 +217,6 @@
     <ProjectReference Include="..\DBMS\DBMS.SQLServer\DBMS.SQLServer.csproj">
       <Project>{09FBE08A-EA43-4036-AE89-929A7AB9D6A0}</Project>
       <Name>DBMS.SQLServer</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DBMS\DMBS.core\DBMS.core.csproj">
-      <Project>{ABE032FA-3415-4707-8709-B888E31A3DE5}</Project>
-      <Name>DBMS.core</Name>
     </ProjectReference>
     <ProjectReference Include="..\Utils\Utils.csproj">
       <Project>{DD159CC0-E03C-4510-B377-8B91D78634C8}</Project>
