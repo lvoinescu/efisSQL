@@ -74,13 +74,12 @@ namespace DBMS.core.SqlParser
 			totalBytes = charsRead;
 			bool waitingForEnclose = false;
 			char waitingChar = '\'';
-			bool lastCharWasSpecial = false;
-			bool waitingForDelimiter = false;
+			bool lastCharIsEscape = false;
 			readQueries = 0;
 			
 
 			while (charsRead > 0) {
-				List<string> rez = GetQuery(fileContents, 0, charsRead, ref waitingForEnclose, ref waitingChar, ref delimiter, ref waitingForDelimiter, ref lastCharWasSpecial);
+				List<string> rez = GetQuery(fileContents, charsRead, ref waitingForEnclose, ref waitingChar, ref lastCharIsEscape);
 				readQueries += rez.Count;
 				
 				if (QueriesRead != null)
@@ -91,36 +90,36 @@ namespace DBMS.core.SqlParser
 			}
 		}
 		
-		private List<string> GetQuery(byte[] s, int startindex, int len, ref bool waitingForEnclose, ref char waitingChar, ref string delimiter, ref bool waitingForDelimiter, ref bool lastCharWasSpecial)
+		private List<string> GetQuery(byte[] s, int len, ref bool waitingForEnclose, ref char waitingChar, ref bool lastCharIsEscape)
 		{
 			
 			try {
 				string cmd = "";
-				int i = 0, istartp = 0, istopp = 0, crt = 0;
+				int i = 0, quotedStringStartIndex = 0, quotedStringEndIndex = 0, crt = 0;
 				List<string> queries = new List<string>();
 
 				for (i = 0; i < len; i++) {
 					if ((s[i] == '\'' || s[i] == '"')) {
-						if (!waitingForEnclose)
+						if (!waitingForEnclose) {
 							waitingChar = (char)s[i];
-						bool isEnclosing = IsValidEnclosed(s, waitingChar, i, lastCharWasSpecial);
-						if (isEnclosing) {
+						}
+						if (IsValidEnclosed(s, waitingChar, i, lastCharIsEscape)) {
 							waitingChar = (char)s[i];
 							if (!waitingForEnclose) {
 								cmd = encoding.GetString(s, crt, i - crt);
 								List<string> r = ProcessClearCmd(cmd);
 								for (int j = 0; j < r.Count; j++)
 									queries.Add(r[j]);
-								istartp = i + 1;
+								quotedStringStartIndex = i + 1;
 								mainCommand.Append(remainingCommand.ToString());
 								mainCommand.Append((char)s[i]);
 								
 							} else {
 								//we clear rest of rest command to the right of ' or "
 								remainingCommand.Length = 0;
-								istopp = i;
-								if (istopp > -1) {
-									string x = encoding.GetString(s, istartp, istopp - istartp);
+								quotedStringEndIndex = i;
+								if (quotedStringEndIndex > -1) {
+									string x = encoding.GetString(s, quotedStringStartIndex, quotedStringEndIndex - quotedStringStartIndex);
 									mainCommand.Append(x);
 								}
 								mainCommand.Append((char)s[i]);
@@ -130,30 +129,27 @@ namespace DBMS.core.SqlParser
 						}
 					}
 				}
+				
 				if (waitingForEnclose) {
-					string y = encoding.GetString(s, istartp, len - istartp);
-					mainCommand.Append(y);
+					mainCommand.Append(encoding.GetString(s, quotedStringStartIndex, len - quotedStringStartIndex));
 				} else {
 					string tmpa = encoding.GetString(s, crt, len - crt);
 					List<string> r = ProcessClearCmd(tmpa);
 					for (int j = 0; j < r.Count; j++)
 						queries.Add(r[j]);
 				}
+				
 				if (s[len - 1] == '\\') {
 					int kb = len - 2;
-					bool gatab = false;
-					while ((kb >= 0) && (gatab == false)) {
-						if (s[kb] != '\\') {
-							gatab = true;
-						} else
-							kb--;
+					while ((kb >= 0) && (s[kb] == '\\')) {
+						kb--;
 					}
-					if ((len - 1 - kb) % 2 != 0)
-						lastCharWasSpecial = true;
-					else
-						lastCharWasSpecial = false;
-				} else
-					lastCharWasSpecial = false;
+
+					lastCharIsEscape = ((len - 1 - kb) % 2 != 0);
+
+				} else {
+					lastCharIsEscape = false;
+				}
 				
 				return queries;
 			} catch (Exception ex) {
