@@ -1,0 +1,12 @@
+DBMS/DBMS.MySql/bin/**
+DBMS/DBMS.MySql/obj/**
+DBMS/DBMS.SQLite/bin/**
+DBMS/DBMS.SQLite/obj/**
+DBMS/DBMS.SQLServer/bin/**
+DBMS/DBMS.SQLServer/obj/**
+DBMS/DBMS.core/bin/**
+DBMS/DBMS.core/obj/**
+DBMS/test/obj/**
+DBMS/test/bin/**
+efisSQL/bin/**
+efisSQL/obj/**
