@@ -1,4 +1,5 @@
-﻿namespace efisSQL
+﻿using DBMS.core.UI;
+namespace efisSQL
 {
     partial class DBManagerForm
     {
@@ -36,7 +37,7 @@
         	this.timer1 = new System.Windows.Forms.Timer(this.components);
         	this.statusStrip1 = new System.Windows.Forms.StatusStrip();
         	this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-        	this.browseTree = new System.Windows.Forms.TreeView();
+        	this.browseTree = new BufferedTreeView();
         	this.panel1 = new System.Windows.Forms.Panel();
         	this.label1 = new System.Windows.Forms.Label();
         	this.splitContainer1.Panel1.SuspendLayout();
@@ -175,7 +176,7 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.TreeView browseTree;
+        private BufferedTreeView browseTree;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
 

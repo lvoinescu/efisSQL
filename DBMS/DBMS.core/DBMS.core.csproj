@@ -89,6 +89,7 @@
     <Compile Include="SqlParser\QueriesReadEventArgs.cs" />
     <Compile Include="SqlParser\SqlParser.cs" />
     <Compile Include="TableRefreshArgs.cs" />
+    <Compile Include="UI\BufferedTreeView.cs" />
     <Compile Include="Utils.cs" />
     <Compile Include="ConnectionSetting.cs" />
     <Compile Include="UI\BlobViewForm.cs">

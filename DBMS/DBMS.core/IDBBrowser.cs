@@ -23,6 +23,7 @@ using System;
 using System.Windows.Forms;
 using DBMS.core;
 using System.Drawing;
+using DBMS.core.UI;
 namespace DBMS.core
 {
     public interface IDBBrowser
@@ -46,14 +47,14 @@ namespace DBMS.core
         string GetNewTriggerQuery(string dataBase, string tableName, string name);
         string GetNewViewQuery(string dataBase, string tableName, string name);
         string ServerAddress { get; set; }
-        System.Windows.Forms.Form MasterForm { get; set; }
+        Form MasterForm { get; set; }
         System.ComponentModel.IComponent MenuManager { get; }
-        System.Windows.Forms.ContextMenuStrip GetMainMenu();
+        ContextMenuStrip GetMainMenu();
 
         void DeleteSelectedRowsTable(DataUserView dataUserView);
         void Disconnect();
         //void Dispose();
-        void RegisterTreeView(TreeView tView);
+        void RegisterTreeView(BufferedTreeView tView);
         void Reconnect();
         void RefreshNode(System.Windows.Forms.TreeNode node);
         void RenameTable(string dataBase, string tableName, string newName);

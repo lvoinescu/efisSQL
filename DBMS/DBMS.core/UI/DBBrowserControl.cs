@@ -14,6 +14,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Text;
 using System.Drawing;
+using DBMS.core.UI;
 
 namespace DBMS.core
 {
@@ -53,8 +54,8 @@ namespace DBMS.core
             get { return browserIsBusy; }
             set { browserIsBusy = value; }
         }
-        protected TreeView browseTree;
-        public void RegisterTreeView(TreeView tView)
+        protected BufferedTreeView browseTree;
+        public void RegisterTreeView(BufferedTreeView tView)
         {
             this.browseTree = tView;
         }
