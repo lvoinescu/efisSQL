@@ -67,6 +67,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Libs\ICSharpCode.TextEditor.dll</HintPath>
     </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\Libs\log4net\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="MagicLibrary, Version=1.7.4.0, Culture=neutral, PublicKeyToken=3a6eb82f876a49bc">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Libs\MagicLibrary.DLL</HintPath>
