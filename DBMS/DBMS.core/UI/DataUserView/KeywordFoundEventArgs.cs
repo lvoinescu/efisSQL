@@ -17,7 +17,6 @@
 
 using System;
 using System.Collections.Generic;
-using System.Text;
 using ICSharpCode.TextEditor.Gui.CompletionWindow;
 
 namespace DBMS.core

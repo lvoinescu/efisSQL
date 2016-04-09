@@ -22,8 +22,6 @@
 using System;
 using System.Windows.Forms;
 using DBMS.core;
-using ICSharpCode.TextEditor.Gui.CompletionWindow;
-using System.Collections.Generic;
 using System.Drawing;
 namespace DBMS.core
 {

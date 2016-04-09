@@ -20,22 +20,15 @@
 
 
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Data.Odbc;
-using System.Drawing;
 using System.IO;
 using System.Text;
 using System.Windows.Forms;
-using System.Xml;
 using System.Xml.Serialization;
 
 using DBMS.core;
 using DBMS.MySQL;
 using DBMS.SQLite;
 using DBMS.SQLServer;
-using ICSharpCode.TextEditor;
 
 namespace efisSQL
 {

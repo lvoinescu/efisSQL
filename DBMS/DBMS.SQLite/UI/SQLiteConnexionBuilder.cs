@@ -1,11 +1,6 @@
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Windows.Forms;
 using System.Data;
-using System.Data.Odbc;
-using System.Xml.Serialization;
-using System.Security;
 using System.IO;
 using System.Data.SQLite;
 using DBMS.core;

@@ -22,17 +22,13 @@
     using System;
     using System.Collections.Generic;
     using System.ComponentModel;
-    using System.Data;
     using System.Drawing;
-    using System.Text;
     using System.Windows.Forms;
     using Crownwood.Magic.Controls;
     using Crownwood.Magic.Docking;
     using Crownwood.Magic.Common;
     using DBMS.core;
-    using System.Threading;
     using System.Collections;
-    using System.Drawing.Drawing2D;
 
     namespace efisSQL
     {

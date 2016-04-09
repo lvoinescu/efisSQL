@@ -24,7 +24,6 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Data;
-using System.Data.Odbc;
 using System.Drawing;
 using mysqlLib = MySql;
 using MySql.Data.MySqlClient;
@@ -35,7 +34,6 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using ICSharpCode.TextEditor;
 using DBMS.core;
-using System.Drawing.Drawing2D;
 using ICSharpCode.TextEditor.Gui.CompletionWindow;
 using System.Text.RegularExpressions;
 

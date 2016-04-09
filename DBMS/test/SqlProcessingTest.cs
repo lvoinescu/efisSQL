@@ -11,7 +11,6 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
-using DBMS.core;
 using DBMS.core.SqlParser;
 using NUnit.Framework;
 

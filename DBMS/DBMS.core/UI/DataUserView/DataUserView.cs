@@ -18,23 +18,17 @@
 
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
 using System.Data;
 using System.Text;
 using System.Windows.Forms;
-using System.Data.Odbc;
 using System.IO;
 using System.Runtime.InteropServices;
 
 using DBMS.core ;
 
 using ICSharpCode.TextEditor;
-using ICSharpCode.TextEditor.Actions;
-using ICSharpCode.TextEditor.Gui;
-using ICSharpCode.TextEditor.Gui.CompletionWindow;
 using ICSharpCode.TextEditor.Document;
-using System.Text.RegularExpressions;
 
 namespace DBMS.core
 {

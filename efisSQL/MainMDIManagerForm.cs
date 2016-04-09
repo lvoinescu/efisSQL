@@ -20,16 +20,9 @@
 
 
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Data.Odbc;
-using System.Drawing;
 using System.Reflection;
-using System.Text;
 using System.Windows.Forms;
 
-using DBMS;
 using DBMS.core;
 
 namespace efisSQL

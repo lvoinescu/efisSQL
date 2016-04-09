@@ -23,11 +23,9 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using DBMS.MySQL;
-using System.Data.Odbc;
 using System.IO;
 using mysqlLib = MySql ;
 using MySql.Data.Types;
@@ -36,7 +34,6 @@ using System.Globalization;
 using System.Reflection;
 using System.Text.RegularExpressions;
 using DBMS.core;
-using System.Xml.Serialization;
 
 namespace DBMS.MySQL
 {

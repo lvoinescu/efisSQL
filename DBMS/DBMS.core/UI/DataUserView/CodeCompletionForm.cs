@@ -20,15 +20,10 @@
 
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 using ICSharpCode.TextEditor.Gui.CompletionWindow;
 using ICSharpCode.TextEditor;
-using System.Drawing.Drawing2D;
-using System.Globalization;
 using System.Text.RegularExpressions;
 namespace DBMS.core
 {

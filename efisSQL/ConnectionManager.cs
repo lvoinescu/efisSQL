@@ -19,14 +19,7 @@
 */
 
 using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Configuration;
-using System.Security;
 using System.Xml.Serialization;
-using System.Runtime.Serialization;
-using System.Xml;
-using System.Xml.Schema;
 namespace efisSQL
 {
 

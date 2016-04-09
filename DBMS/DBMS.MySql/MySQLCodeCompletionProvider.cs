@@ -21,7 +21,6 @@
 
 using System;
 using System.Collections.Generic;
-using System.Text;
 using DBMS.core;
 using System.Windows.Forms;
 using ICSharpCode.TextEditor.Gui.CompletionWindow;
